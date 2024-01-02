@@ -1,0 +1,120 @@
+{
+    "Users": [],
+    "Seats": [],
+    "Registration": [],
+    "Films": [
+        {
+            "Title": "Avatar",  
+            "Year": "2009",
+            "Runtime": "162 min",
+            "Image": "C:\\fakepath\\avatar.jfif",
+            "id": 1
+        },
+        {
+            "Title": "I Am Legend",
+            "Year": "2007",
+            "Runtime": "101 min",
+            "Image": "C:\\fakepath\\IAmLegend.jfif",
+            "id": 2
+            
+        },
+        {
+            "Title": "300",
+            "Year": "2006",
+            "Runtime": "117 min",
+            "Image": "C:\\fakepath\\300.jfif",
+            "id": 3
+        },
+        {
+            "Title": "The Avengers",
+            "Year": "2012",
+            "Runtime": "143 min",
+            "Image": "C:\\fakepath\\TheAvengers.jfif",
+            "id": 4
+        },
+        {
+            "Title": "The Wolf of Wall Street",
+            "Year": "2013",
+            "Runtime": "180 min",
+            "Image": "C:\\fakepath\\wolf.jfif",
+            "id": 5
+        },
+        {
+            "Title": "Interstellar",
+            "Year": "2014",
+            "Runtime": "169 min",
+            "Image": "C:\\fakepath\\interstellar.jfif",
+            "id": 6
+        },
+        {
+            "Title": "Interstellar",
+            "Year": "2014",
+            "Runtime": "169 min",
+            "Image": "C:\\fakepath\\interstellar.jfif",
+            "id": 7
+        }  
+       
+    ],
+    "Webseries":[
+        {
+          "Id": 1,
+          "Title": "Stranger Things",
+          "Year": 2016,
+          "Runtime": 50,
+          "Image": "C:\\fakepath\\stranger_things.jfif"
+        },
+        {
+          "Id": 2,
+          "Title": "The Mandalorian",
+          "Year": 2019,
+          "Runtime": 40,
+          "Image": "C:\\fakepath\\mandalorian.jfif"
+        },
+        {
+          "Id": 3,
+          "Title": "Breaking Bad",
+          "Year": 2008,
+          "Runtime": 47,
+          "Image": "C:\\fakepath\\breaking_bad.jfif"
+        },
+        {
+          "Id": 4,
+          "Title": "Game of Thrones",
+          "Year": 2011,
+          "Runtime": 55,
+          "Image": "C:\\fakepath\\got.jfif"
+        },
+        {
+            "Id": 5,
+            "Title": "Stranger Things",
+            "Year": 2016,
+            "Runtime": 50,
+            "Image": "C:\\fakepath\\stranger_things.jfif"
+          },
+          {
+            "Id": 6,
+            "Title": "The Mandalorian",
+            "Year": 2019,
+            "Runtime": 40,
+            "Image": "C:\\fakepath\\mandalorian.jfif"
+          },
+          {
+            "Id": 7,
+            "Title": "Breaking Bad",
+            "Year": 2008,
+            "Runtime": 47,
+            "Image": "C:\\fakepath\\breaking_bad.jfif"
+          },
+          {
+            "Id": 8,
+            "Title": "Game of Thrones",
+            "Year": 2011,
+            "Runtime": 55,
+            "Image": "C:\\fakepath\\got.jfif"
+          }
+  
+
+
+      ]
+      
+}
