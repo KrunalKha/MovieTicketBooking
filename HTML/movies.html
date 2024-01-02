@@ -1,0 +1,79 @@
+<!-- Code By Krunal Kharat -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookMe</title>
+    <script src="../JavaScript/plugins/all_cdn.js"></script>
+	<script src="../JavaScript/controller/allMovie_details_controller.js" type="module"></script>
+	<script src="../JavaScript/controller/filter_movie_details_controller.js" type="module"></script>
+	<link rel="stylesheet" href="../CSS/index.css">
+    <link rel="stylesheet" href="../CSS/movies.css">
+
+
+</head>
+<body>
+    <div class="header">
+        <div class="headertop_desc">
+			<div class="wrap">
+				<div class="nav_list">
+					<div class="prime-nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="movies.html">Movies</a></li>
+							<li><a href="webSeries.html">Web Series</a></li>
+							<li><a href="theaters.html">Theters</a></li>
+							<li><a href="">Events</a></li>
+						</ul>
+					</div>
+					
+
+					<div class="account_desc">
+						<ul>
+							<li id="login"><a href="../login/login.html">Login</a></li>
+							<li id="loggedIn" style="display: none;"><a href="">My Account</a></li>
+						</ul>
+				</div> 
+			</div>
+
+			<div class="wrapper2">
+				<div class="dropdown">
+					<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+					  Filter
+					</button>
+					<ul class="dropdown-menu">
+						
+						<div class="yearMovie">
+							<h4>By Year</h4>
+							<li class="option">All</li>
+							<li class="option">2023</li>
+							<li class="option">2021</li>
+							<li class="option">2020</li>
+						</div>
+					  <button type="submit" class="btn btn-primary" id="filter-btn">Filter</button>
+					</ul>
+					
+				  </div>
+				
+					
+				<form class="d-flex">
+					<input class="form-control me-2" id="search_bar" type="search" placeholder="Search" aria-label="Search" required>
+					<button class="btn btn-outline-success" type="submit" id="search-btn">Search</button>
+				</form>
+			</div>
+			
+			
+			</div>
+        </div>
+    </div>
+
+    <section class="content">
+		
+
+	</section>
+    
+</body>
+</html>
