@@ -1,6 +1,6 @@
 {
   "Users": [],
-  "Seats": [],
+  "Theater": [],
   "Registration": [],
   "Films": [
     {
@@ -194,6 +194,169 @@
         "tragedy"
       ],
       "Image": "C:\\fakepath\\got.jfif"
+    }
+  ],
+  "Events": [
+    {
+      "id": "1",
+      "title": "Standup Comedy Night",
+      "genre": [
+        "Comedy"
+      ],
+      "duration_minutes": "90",
+      "language": [
+        "English"
+      ],
+      "artist": "John Doe",
+      "rating": "4.5",
+      "description": "Join us for a hilarious evening with the incredibly talented John Doe. His witty observations and unique comedic style will have you laughing non-stop for 90 minutes."
+    },
+    {
+      "id": "2",
+      "title": "Soulful Singing Showcase",
+      "genre": [
+        "Singing"
+      ],
+      "duration_minutes": "120",
+      "language": [
+        "English",
+        "Spanish"
+      ],
+      "artist": "Maria Rodriguez",
+      "rating": "4.8",
+      "description": "Experience the magic of Maria Rodriguez's soulful voice in this two-hour singing showcase. A night filled with beautiful melodies and heartfelt performances."
+    },
+    {
+      "id": "3",
+      "title": "Poetry Jam Session",
+      "genre": [
+        "Poetry"
+      ],
+      "duration_minutes": "60",
+      "language": [
+        "English"
+      ],
+      "artist": "Sarah Smith",
+      "rating": "4.2",
+      "description": "Immerse yourself in the world of poetry with Sarah Smith. An intimate one-hour session where words come to life, expressing emotions and stories in the most profound way."
+    },
+    {
+      "id": "4",
+      "title": "Laugh Out Loud Comedy Extravaganza",
+      "genre": [
+        "Comedy"
+      ],
+      "duration_minutes": "120",
+      "language": [
+        "English"
+      ],
+      "artist": "Chris Anderson",
+      "rating": "4.7",
+      "description": "Get ready to laugh your heart out with Chris Anderson's side-splitting humor. A two-hour comedy extravaganza that guarantees a night of laughter and joy."
+    },
+    {
+      "id": "5",
+      "title": "Acoustic Serenade Evening",
+      "genre": [
+        "Singing"
+      ],
+      "duration_minutes": "90",
+      "language": [
+        "English"
+      ],
+      "artist": "Emily Johnson",
+      "rating": "4.6",
+      "description": "Unwind with the soothing sounds of Emily Johnson's acoustic serenade. Join us for a 90-minute musical journey filled with beautiful melodies and heartfelt tunes."
+    },
+    {
+      "id": "6",
+      "title": "Spoken Word Poetry Night",
+      "genre": [
+        "Poetry"
+      ],
+      "duration_minutes": "75",
+      "language": [
+        "English"
+      ],
+      "artist": "David Brown",
+      "rating": "4.4",
+      "description": "Engage your senses in an evening of spoken word poetry with the expressive David Brown. A 75-minute session that will leave you moved and inspired."
+    },
+    {
+      "id": "7",
+      "title": "Comedy Showcase: The Rising Stars",
+      "genre": [
+        "Comedy"
+      ],
+      "duration_minutes": "100",
+      "language": [
+        "English"
+      ],
+      "artist": "The Rising Stars Ensemble",
+      "rating": "4.3",
+      "description": "Discover the future of comedy with The Rising Stars Ensemble. A 100-minute showcase featuring emerging comedians who are sure to leave you in stitches."
+    },
+    {
+      "id": "8",
+      "title": "Jazz and Blues Night",
+      "genre": [
+        "Singing"
+      ],
+      "duration_minutes": "110",
+      "language": [
+        "English"
+      ],
+      "artist": "Michael Davis Quartet",
+      "rating": "4.9",
+      "description": "Immerse yourself in the soulful world of jazz and blues with the Michael Davis Quartet. A 110-minute musical journey that promises to captivate and uplift."
+    },
+    {
+      "id": "9",
+      "title": "Open Mic Poetry Session",
+      "genre": [
+        "Poetry"
+      ],
+      "duration_minutes": "80",
+      "language": [
+        "English"
+      ],
+      "artist": "Various Poets",
+      "rating": "4.1",
+      "description": "Experience the diversity of poetic expression in our Open Mic Poetry Session. An 80-minute event featuring various poets sharing their unique perspectives and voices."
+    }
+  ],
+  "Sports": [
+    {
+      "Id": 1,
+      "title": "Football Match",
+      "date": "2023-03-15",
+      "time": "19:00",
+      "venue": "Stadium A",
+      "image": "C:\\fakepath\\footballMatch.jfif"
+    },
+    {
+      "Id": 2,
+      "title": "Basketball Game",
+      "date": "2023-03-18",
+      "time": "15:30",
+      "venue": "Arena B",
+      "image": "C:\\fakepath\\footballMatch.jfif"
+    },
+    {
+      "Id": 3,
+      "title": "Tennis Tournament",
+      "date": "2023-03-22",
+      "time": "12:45",
+      "venue": "Tennis Club C",
+      "image": "C:\\fakepath\\footballMatch.jfif"
+    },
+    {
+      "Id": 4,
+      "title": "Soccer Championship",
+      "date": "2023-03-25",
+      "time": "20:15",
+      "venue": "Field D",
+      "image": "C:\\fakepath\\footballMatch.jfif"
     }
   ]
 }
