@@ -13,7 +13,7 @@ $(document).ready(function(){
         $(".movies-container").append("<div class = 'content-header'></div>");
         $(".content-header").append("<h2 class='content-title'>Popular Movies</h2>");
         $(".content-header").append("<button class='seeMore' id='moviesSeemore-btn'>see more...</button>");
-        $(".movies-container").append("<div class = 'card-container'></div>");
+        $(".movies-container").append("<div class = 'movies-card-container card-container'></div>");
         
          for(let movie of movies){
            
@@ -27,13 +27,12 @@ $(document).ready(function(){
 					<div class="card-info">
 						<h2 id="movie-title">"${movie.Title}"</h2>
 						<p>Year: "${movie.Year}"</p>
-						<button style="margin-top: 10%;" class="book-now-btn" movieId='${movie.id}'>Watch Now</button>
+						<button style="margin-top: 10%;" class="book-now-btn book-now-movie" movieId='${movie.id}'>Watch Now</button>
 					</div>
 				</div>
 
             `  
-            $(".card-container").append(card);
-            // let bookBtn = `<button style="margin-top: 10%;" class="book-now-btn" movieId='${movie.id}'>Book Now</button>`
+            $(".movies-card-container").append(card);
           
             $(".card_"+card_count).append(row);
 
@@ -42,6 +41,13 @@ $(document).ready(function(){
             card_count=card_count+1;
             
          }
+         $('.book-now-movie').click(function() {
+            
+            var categoryId = 'Films';
+            var Id = $(this).attr('movieId'); 
+            window.location.href = 'booking_show.html?category=' + categoryId + '&id=' + Id;
+            
+          });
         
     }).catch((error)=>{
         console.log(error);
@@ -53,11 +59,11 @@ $(document).ready(function(){
        
         
         let webSeries = response.data;
-        $(".content").append("<div class='webSeries-container'></div>");
+        $(".content").append("<div class='popular-webseries webSeries-container'></div>");
         $(".webSeries-container").append("<div class = 'content-header1'></div>");
         $(".content-header1").append("<h2 class='content-title'>Popular WebSeries</h2>");
         $(".content-header1").append("<button class='seeMore' id='webSeriesSeemore-btn'>see more...</button>");
-        $(".webSeries-container").append("<div class = 'card-container'></div>");
+        $(".webSeries-container").append("<div class = 'webseries-card-container card-container'></div>");
         
          for(let series of webSeries){
            
@@ -71,40 +77,31 @@ $(document).ready(function(){
 					<div class="card-info">
 						<h2 id="movie-title">"${series.Title}"</h2>
 						<p>Year: "${series.Year}"</p>
-						<button style="margin-top: 10%;" class="book-now-btn" movieId='${series.id}'>Watch Now</button>
+						<button style="margin-top: 10%;" class="book-now-btn book-now-webseries" webSeriesId='${series.Id}'>Watch Now</button>
 					</div>
 				</div>
             `  
-            $(".card-container").append(card);
-            // let bookBtn = `<button style="margin-top: 10%;" class="book-now-btn" movieId='${movie.id}'>Book Now</button>`
+            $(".webseries-card-container").append(card);
           
             $(".card_"+card_count).append(row);
 
            
-            // $(".card_"+card_count).append(bookBtn);
             card_count=card_count+1;
             
          }
-        
- 
-        
+         $('.book-now-webseries').click(function() {
             
-        
+            var categoryId = 'Webseries';
+            var Id = $(this).attr('webSeriesId'); 
+            window.location.href = 'booking_show.html?category=' + categoryId + '&id=' + Id;
+            
+          });
+ 
     }).catch((error)=>{
         console.log(error);
     })
+
 })
-
-
-
-
-
-
-
-
-
-
-
 
 
 

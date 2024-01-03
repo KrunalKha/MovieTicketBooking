@@ -22,24 +22,25 @@ $(document).ready(function(){
 					<div class="card-info">
 						<h2 id="movie-title">"${series.Title}"</h2>
 						<p>Year: "${series.Year}"</p>
-						<button style="margin-top: 10%;" class="book-now-btn" movieId='${series.id}'>Watch Now</button>
+						<button style="margin-top: 10%;" class="book-now-btn" webSeriesId='${series.Id}'>Watch Now</button>
 					</div>
 				</div>
             `  
             $(".card-container").append(card);
-            // let bookBtn = `<button style="margin-top: 10%;" class="book-now-btn" movieId='${movie.id}'>Book Now</button>`
-          
+            
             $(".card_"+card_count).append(row);
 
-           
-            // $(".card_"+card_count).append(bookBtn);
             card_count=card_count+1;
             
          }
-        
- 
-        
+         $('.book-now-btn').click(function() {
             
+            var categoryId = 'Webseries';
+            var Id = $(this).attr('webSeriesId'); 
+            window.location.href = 'booking_show.html?category=' + categoryId + '&id=' + Id;
+            
+          });
+        
         
     }).catch((error)=>{
         console.log(error);

@@ -1,26 +1,30 @@
 import MovieService from "../services/movieService.js";
+import SportService from "../services/sportsService.js";
 
 $(document).ready(function(){
 
-    MovieService.getMovieDetails()
+    SportService.getSportDetails()
     .then((response)=>{
-        let movies = response.data;
-        $(".content").html("<div class='popular-movies movies-container'></div>");
-        $(".movies-container").append("<div class = 'card-container'></div>");
+       
+        
+        let sports = response.data;
+
+        $(".content").append("<div class='sports-container'></div>");
+        $(".sports-container").append("<div class = 'card-container'></div>");
         let card_count=1;
-         for(let movie of movies){
+         for(let sport of sports){
            
             let card = `<div class = 'card card_${card_count}'></div>`;
             let row = `
                 <div class ="card-image">
-                <img src="${movie.Image.replace('C:\\fakepath\\','../images/moviePosters/')}" alt="movie poster" >
+                <img src="${sport.image.replace('C:\\fakepath\\','../images/sportsPosters/')}" alt="sport poster" >
 
                 </div>
                 <div class="overlay">
 					<div class="card-info">
-						<h2 id="movie-title">"${movie.Title}"</h2>
-						<p>Year: "${movie.Year}"</p>
-						<button style="margin-top: 10%;" class="book-now-btn" movieId='${movie.id}'>Watch Now</button>
+						<h2 id="movie-title">"${sport.title}"</h2>
+						<p>Time: "${sport.time}"</p>
+						<button style="margin-top: 10%;" class="book-now-btn" sportId='${sport.Id}'>Watch Now</button>
 					</div>
 				</div>
 
@@ -33,13 +37,12 @@ $(document).ready(function(){
 
          $('.book-now-btn').click(function() {
             
-            var categoryId = 'Films';
-            var Id = $(this).attr('movieId'); 
+            var categoryId = 'Sport';
+            var Id = $(this).attr('sportId'); 
             window.location.href = 'booking_show.html?category=' + categoryId + '&id=' + Id;
             
           });
-
-         
+        
     }).catch((error)=>{
         console.log(error);
     })
