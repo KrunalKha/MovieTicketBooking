@@ -3,21 +3,23 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BookMe</title>
-    <script src="../JavaScript/plugins/all_cdn.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>BookMe</title>
+	<script src="../JavaScript/plugins/all_cdn.js"></script>
 	<script src="../JavaScript/controller/allMovie_details_controller.js" type="module"></script>
 	<script src="../JavaScript/controller/filter_movie_details_controller.js" type="module"></script>
 	<link rel="stylesheet" href="../CSS/index.css">
-    <link rel="stylesheet" href="../CSS/movies.css">
+	<link rel="stylesheet" href="../CSS/movies.css">
 
 
 </head>
+
 <body>
-    <div class="header">
-        <div class="headertop_desc">
+	<div class="header">
+		<div class="headertop_desc">
 			<div class="wrap">
 				<div class="nav_list">
 					<div class="prime-nav">
@@ -29,51 +31,73 @@
 							<li><a href="">Events</a></li>
 						</ul>
 					</div>
-					
+
 
 					<div class="account_desc">
 						<ul>
 							<li id="login"><a href="../login/login.html">Login</a></li>
 							<li id="loggedIn" style="display: none;"><a href="">My Account</a></li>
 						</ul>
-				</div> 
-			</div>
+					</div>
+				</div>
 
-			<div class="wrapper2">
-				<div class="dropdown">
-					<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-					  Filter
-					</button>
-					<ul class="dropdown-menu">
-						
-						<div class="yearMovie">
-							<h4>By Year</h4>
-							<li class="option">All</li>
-							<li class="option">2023</li>
-							<li class="option">2021</li>
-							<li class="option">2020</li>
-						</div>
-					  <button type="submit" class="btn btn-primary" id="filter-btn">Filter</button>
-					</ul>
-					
-				  </div>
-				
-					
-				<form class="d-flex">
-					<input class="form-control me-2" id="search_bar" type="search" placeholder="Search" aria-label="Search" required>
-					<button class="btn btn-outline-success" type="submit" id="search-btn">Search</button>
-				</form>
-			</div>
-			
-			
-			</div>
-        </div>
-    </div>
+				<div class="wrapper2">
+					<!-- filter cpde -->
+					<div class="dropdown">
+						<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+							aria-expanded="false">
+							Filter
+						</button>
+						<ul class="dropdown-menu">
 
-    <section class="content">
-		
+							<div class="filter-container">
+
+
+								<div class="radio-group">
+									<span class="radio-label">Release:</span>
+									<label><input type="radio" name="year" value="all">All</label>
+									<label><input type="radio" name="year" value="2022">2022</label>
+									<label><input type="radio" name="year" value="2021">2021</label>
+									<label><input type="radio" name="year" value="2020">2020</label>
+									<label><input type="radio" name="year" value="2019">2019</label>
+									<label><input type="radio" name="year" value="old">Older</label>
+									<!-- Add more year options as needed -->
+								</div>
+
+								<div class="radio-group">
+									<span class="radio-label">By Genre:</span>
+									<label><input type="radio" name="genre" value="action">Action</label>
+									<label><input type="radio" name="genre" value="adventure">Adventure</label>
+									<label><input type="radio" name="genre" value="crime">Crime</label>
+									<label><input type="radio" name="genre" value="comedy">Comedy</label>
+									<label><input type="radio" name="genre" value="horror">Horror</label>
+									<!-- Add more genre options as needed -->
+								</div>
+							</div>
+							<button type="submit" class="btn btn-primary" id="filter-btn">Filter</button>
+
+						</ul>
+
+					</div>
+
+
+					<form class="d-flex">
+						<input class="form-control me-2" id="search_bar" type="search" placeholder="Search"
+							aria-label="Search" required>
+						<button class="btn btn-outline-success" type="submit" id="search-btn">Search</button>
+					</form>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+
+	<section class="content">
+
 
 	</section>
-    
+
 </body>
+
 </html>
