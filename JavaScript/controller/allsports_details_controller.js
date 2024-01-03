@@ -1,4 +1,3 @@
-import MovieService from "../services/movieService.js";
 import SportService from "../services/sportsService.js";
 
 $(document).ready(function(){
