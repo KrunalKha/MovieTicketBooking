@@ -44,5 +44,3 @@ $(document).ready(function(){
         console.log(error);
     });
 })
-
-// Code by Krunal Kharat
