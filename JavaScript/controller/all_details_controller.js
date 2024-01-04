@@ -74,7 +74,7 @@ $(document).ready(function () {
             $(".webSeries-container").append("<div class = 'webseries-card-container card-container'></div>");
 
             for (let series of webSeries) {
-
+                
                 let card = `<div class = 'card card_${card_count}'></div>`;
                 let row = `
                 <div class ="card-image">
@@ -85,7 +85,7 @@ $(document).ready(function () {
 					<div class="card-info">
 						<h2 id="movie-title">"${series.Title}"</h2>
 						<p>Year: "${series.Year}"</p>
-						<button style="margin-top: 10%;" class="book-now-btn book-now-webseries" webSeriesId='${series.Id}'>Watch Now</button>
+						<button style="margin-top: 10%;" class="book-now-btn book-now-webseries" webSeriesId='${series.id}'>Watch Now</button>
 					</div>
 				</div>
             `
@@ -117,7 +117,7 @@ $(document).ready(function () {
     // added sports to homepage
     SportService.getSportDetails()
         .then((response) => {
-
+            
 
             let sports = response.data;
 
@@ -137,9 +137,9 @@ $(document).ready(function () {
                 </div>
                 <div class="overlay">
 					<div class="card-info">
-						<h2 id="movie-title">"${sport.title}"</h2>
+						<h2 id="movie-title">"${sport.match}"</h2>
 						<p>Time: "${sport.time}"</p>
-						<button style="margin-top: 10%;" class="book-now-btn" sportId='${sport.Id}'>Watch Now</button>
+						<button style="margin-top: 10%;" class="book-now-btn" sportId='${sport.id}'>Watch Now</button>
 					</div>
 				</div>
 
@@ -158,7 +158,6 @@ $(document).ready(function () {
 
             });
             $('#sportsSeemore-btn').click(function () {
-
                 window.location.href = 'sports.html';
 
             });
@@ -167,6 +166,7 @@ $(document).ready(function () {
 
         }).catch((error) => {
             console.log(error);
+            
         })
 
     //add events here
