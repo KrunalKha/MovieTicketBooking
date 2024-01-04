@@ -24,7 +24,7 @@ $(document).ready(function(){
 					<div class="card-info">
 						<h2 id="movie-title">"${sport.match}"</h2>
 						<p>Time: "${sport.time}"</p>
-						<button style="margin-top: 10%;" class="book-now-btn" sportId='${sport.id}'>Watch Now</button>
+						<button style="margin-top: 10%;" class="book-now-btn" sportId='${sport.id}'>Book Now</button>
 					</div>
 				</div>
 

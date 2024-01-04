@@ -17,9 +17,9 @@ $(document).ready(function () {
             $(".content-header").append("<h2 class='content-title'>Popular Movies</h2>");
             $(".content-header").append("<button class='seeMore' id='moviesSeemore-btn'>see more...</button>");
             $(".movies-container").append("<div class = 'movies-card-container card-container'></div>");
-            
+
             for (let movie of movies) {
-               
+
                 let card = `<div class = 'card card_${card_count}'></div>`;
                 let row = `
                 <div class ="card-image">
@@ -30,7 +30,7 @@ $(document).ready(function () {
 					<div class="card-info">
 						<h2 id="movie-title">"${movie.Title}"</h2>
 						<p>Year: "${movie.Year}"</p>
-						<button style="margin-top: 10%;" class="book-now-btn book-now-movie" movieId='${movie.id}'>Watch Now</button>
+						<button style="margin-top: 10%;" class="book-now-movie book-now-btn" movieId='${movie.id}'>Book Now</button>
 					</div>
 				</div>
 
@@ -39,15 +39,13 @@ $(document).ready(function () {
 
                 $(".card_" + card_count).append(row);
 
-
-                // $(".card_"+card_count).append(bookBtn);
                 card_count = card_count + 1;
 
             }
             $('.book-now-movie').click(function () {
 
-                var categoryId = 'Films';
-                var Id = $(this).attr('movieId');
+                let categoryId = 'Films';
+                let Id = $(this).attr('movieId');
                 alert(Id);
                 window.location.href = 'booking_show.html?category=' + categoryId + '&id=' + Id;
 
@@ -75,7 +73,7 @@ $(document).ready(function () {
             $(".webSeries-container").append("<div class = 'webseries-card-container card-container'></div>");
 
             for (let series of webSeries) {
-                
+
                 let card = `<div class = 'card card_${card_count}'></div>`;
                 let row = `
                 <div class ="card-image">
@@ -86,7 +84,7 @@ $(document).ready(function () {
 					<div class="card-info">
 						<h2 id="movie-title">"${series.Title}"</h2>
 						<p>Year: "${series.Year}"</p>
-						<button style="margin-top: 10%;" class="book-now-btn book-now-webseries" webSeriesId='${series.id}'>Watch Now</button>
+						<button style="margin-top: 10%;" class="book-now-webseries book-now-btn" webSeriesId='${series.id}'>Book Now</button>
 					</div>
 				</div>
             `
@@ -100,8 +98,8 @@ $(document).ready(function () {
             }
             $('.book-now-webseries').click(function () {
 
-                var categoryId = 'Webseries';
-                var Id = $(this).attr('webSeriesId');
+                let categoryId = 'Webseries';
+                let Id = $(this).attr('webSeriesId');
                 window.location.href = 'booking_show.html?category=' + categoryId + '&id=' + Id;
 
             });
@@ -118,7 +116,7 @@ $(document).ready(function () {
     // added sports to homepage
     SportService.getSportDetails()
         .then((response) => {
-            
+
 
             let sports = response.data;
 
@@ -140,7 +138,7 @@ $(document).ready(function () {
 					<div class="card-info">
 						<h2 id="movie-title">"${sport.match}"</h2>
 						<p>Time: "${sport.time}"</p>
-						<button style="margin-top: 10%;" class="book-now-btn book-now-sport" sportId='${sport.id}'>Watch Now</button>
+						<button style="margin-top: 10%;" class="book-now-sport book-now-btn" sportId='${sport.id}'>Book Now</button>
 					</div>
 				</div>
 
@@ -152,8 +150,8 @@ $(document).ready(function () {
             }
 
             $('.book-now-sport').click(function () {
-                var categoryId = 'Sport';
-                var Id = $(this).attr('sportId');
+                let categoryId = 'Sport';
+                let Id = $(this).attr('sportId');
                 window.location.href = 'booking_show.html?category=' + categoryId + '&id=' + Id;
 
             });
@@ -166,65 +164,74 @@ $(document).ready(function () {
 
         }).catch((error) => {
             console.log(error);
-            
+
         })
 
+    let Id = 1;
     //add events here
-    EventService.getEventDetails()
-    .then((response)=>{
-        let events = response.data;
+    UserService.getUsersDetailsbyId(Id).then((response) =>{
+        let user = response.data;
+        let userCity = user._city;
        
-        $(".content").append("<div class='events-container'></div>");
-        $(".events-container").append("<div class = 'content-header3 header_cards'></div>");
-        $(".content-header3").append("<h2 class='content-title'>Upcoming Events</h2>");
-        $(".content-header3").append("<button class='seeMore' id='eventsSeemore-btn'>see more...</button>");
-        $(".events-container").append("<div class = 'events-card-container card-container'></div>");
-       
-       
-         for(let event of events){
-           
-            let card = `<div class = 'card card_${card_count}'></div>`;
-            let row = `
+        EventService.getEventDetailsbycity(userCity)
+        .then((response) => {
+            let events = response.data;
+            console.log(events);
+            $(".content").append("<div class='events-container'></div>");
+            $(".events-container").append("<div class = 'content-header3 header_cards'></div>");
+            $(".content-header3").append("<h2 class='content-title'>Events In your City</h2>");
+            $(".content-header3").append("<button class='seeMore' id='eventsSeemore-btn'>see more...</button>");
+            $(".events-container").append("<div class = 'events-card-container card-container'></div>");
+
+
+            for (let event of events) {
+
+                let card = `<div class = 'card card_${card_count}'></div>`;
+                let row = `
                 <div class ="card-image">
-                <img src="${event.Image.replace('C:\\fakepath\\','../images/eventPoster/')}" alt="event poster">
+                <img src="${event.Image.replace('C:\\fakepath\\', '../images/eventPoster/')}" alt="event poster">
                 </div>
                 <div class="overlay">
 					<div class="card-info">
 						<h2 id="movie-title">"${event.title}"</h2>
 						<p>Artist Name: "${event.artist}"</p>
-						<button style="margin-top: 10%;" class="book-now-btn" eventId='${event.id}'>Book Now</button>
+						<button style="margin-top: 10%;" class="book-now-event book-now-btn" eventId='${event.id}'>Book Now</button>
 					</div>
 				</div>
 
-            `  
-            $(".events-card-container").append(card);
-          
-            $(".card_"+card_count).append(row);
-            card_count=card_count+1;
-         }
-         $('.book-now-btn').click(function() {
-            
-            var categoryId = 'Event';
-            var Id = $(this).attr('eventId'); 
-            window.location.href = 'booking_show.html?category=' + categoryId + '&id=' + Id;
-            
-          });
-          $('#eventsSeemore-btn').click(function () {
-            window.location.href = 'events.html';
+            `
+                $(".events-card-container").append(card);
 
+                $(".card_" + card_count).append(row);
+                card_count = card_count + 1;
+            }
+            $('.book-now-event').click(function () {
+
+                let EventId = 'Event';
+                let Id = $(this).attr('eventId');
+                window.location.href = 'booking_show.html?category=' + EventId + '&id=' + Id;
+
+            });
+            $('#eventsSeemore-btn').click(function () {
+                window.location.href = 'events.html';
+
+            });
+
+        }).catch((error) => {
+            console.log(error);
         });
-        
-    }).catch((error)=>{
-        console.log(error);
-    });
 
+
+    })
+
+    
+   
 
     //making banner clickable
     $('.carousel-item').on('click', function () {
 
         var categoryId = 'Sport';
         var Id = $(this).attr('id');
-        alert(Id);
         var link = 'booking_show.html?category=' + categoryId + '&id=' + Id
         if (link) {
             window.location.href = link;
@@ -232,24 +239,27 @@ $(document).ready(function () {
     });
 
     // city popup
-    $('#city').on('click', function () {
+    $('#city').on('click', function (e) {
+        e.preventDefault();
         $('#popupContainer').fadeIn();
 
-        $('.city-button').on('click', function () {
+        $('.city-button').on('click', function (event) {
+             event.preventDefault();
             var selectedCity = $(this).data('city');
             //post the city to user database and display
-            alert('You selected: ' + selectedCity);
+            // alert('You selected: ' + selectedCity);
             let userId = 1;
-            
+
             let updatedData = {
                 _city: selectedCity
             }
 
             UserService.editUsersDetails(userId, updatedData);
             //changing temperory needs to debug
-            $("#city").text(selectedCity);
+            $("#city-label").html(selectedCity);
            
             $('#popupContainer').fadeOut();
+           
         });
     });
 

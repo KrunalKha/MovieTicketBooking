@@ -5,9 +5,13 @@ class EventService{
         // to fetch data from URL --get API
         return await axios.get(this.url);
     }
-    static async getMovieDetailsbycity(city){
+    static async getEventDetailsbycity(cityName){
         // to fetch data from URL --get API
-        return await axios.get(`${this.url}/${city}`);
+        return await axios.get(`${this.url}`,{
+            params: {
+            city: cityName
+            }
+        });
     }
 
     static async getEventDetailsbyFilter(params){

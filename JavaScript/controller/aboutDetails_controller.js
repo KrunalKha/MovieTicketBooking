@@ -136,7 +136,6 @@ $(document).ready(function () {
     EventService.getEventDetailsbyId(id)
             .then((response) => {
                 let event = response.data;
-                    alert(id);
                 // Preload image
                 const preloadImage = new Image();
                 preloadImage.src = `${event.Image.replace('C:\\fakepath\\', '../images/eventPoster/')}`;

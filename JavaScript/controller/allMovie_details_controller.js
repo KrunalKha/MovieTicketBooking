@@ -20,7 +20,7 @@ $(document).ready(function(){
 					<div class="card-info">
 						<h2 id="movie-title">"${movie.Title}"</h2>
 						<p>Year: "${movie.Year}"</p>
-						<button style="margin-top: 10%;" class="book-now-btn" movieId='${movie.id}'>Watch Now</button>
+						<button style="margin-top: 10%;" class="book-now-btn" movieId='${movie.id}'>Book Now</button>
 					</div>
 				</div>
 
