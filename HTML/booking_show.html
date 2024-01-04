@@ -1,44 +1,75 @@
 <!-- Code By Krunal Kharat -->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-    <script src="../JavaScript/plugins/all_cdn.js"></script>
+  
+    
+	 <script src="../JavaScript/controller/aboutDetails_controller.js" type="module"></script>  
+     <link rel="stylesheet" href="../CSS/index.css">
+     <script src="../JavaScript/plugins/all_cdn.js"></script>
     <link rel="stylesheet" href="../CSS/booking_show.css">
+    
 </head>
-
 <body>
     <div class="main-container">
+       
+        
+
         <!-- Navigation starts here -->
-        <header>
-            <div class="navigation">
-                Navigation here
+        <div class="header">
+            <div class="headertop_desc">
+                <div class="wrap">
+                    <div class="nav_list">
+                        <div class="prime-nav">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="movies.html">Movies</a></li>
+                                <li><a href="webSeries.html">Web Series</a></li>
+                                <li><a href="sports.html">Sports</a></li>
+                                <li><a href="events.html">Events</a></li>
+                            </ul>
+                        </div>
+    
+    
+                        <div class="account_desc">
+                            <ul>
+                                <li id="login"><a href="../login/login.html">Login</a></li>
+                                <li id="loggedIn" style="display: none;"><a href="">My Account</a></li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                    
+                    
+                        <form class="d-flex">
+                            <input class="form-control me-2" id="search_bar" type="search" placeholder="Search"
+                                aria-label="Search" required>
+                            <button class="btn btn-outline-success" type="submit" id="search-btn">Search</button>
+                        </form>
+                    </div>
+    
+    
+                
             </div>
-        </header>
+        </div>
         <!-- Navigation ends here -->
+        <section class="content">
+
+        </section>
 
         <!-- Movie Details starts here -->
         <section class="movie-details">
-            <div class="movie-details-contianer">
-                <h1 id="movie-name">DUNKI -HINDI</h1>
-                <div class="more-details-movie">
-                    <!-- Tags goes here -->
-                    <span class="_censor">
-                        UA
-                    </span>
-                    <span class="tags-movie">Comedy</span>
-                    <span class="tags-movie">Drama</span>
-                </div>
+                
             </div>
 
             <!-- Filter starts here -->
             <div class="filter-wrapper">
                 <div class="filter-container">
                     <button class="btn btn-primary">&lt;</button>
+
                     <div class="date-container">
                         <div class="date">
                             <li class="date-day">MON</li>
@@ -46,46 +77,84 @@
                             <li class="date-month">JAN</li>
                         </div>
                         <div class="date">
-                            <li class="date-day">MON</li>
+                             <li class="date-day">MON</li>
                             <li class="date-number">1</li>
                             <li class="date-month">JAN</li>
                         </div>
                         <div class="date">
-                            <li class="date-day">MON</li>
+                             <li class="date-day">MON</li>
                             <li class="date-number">1</li>
                             <li class="date-month">JAN</li>
                         </div>
                         <div class="date">
-                            <li class="date-day">MON</li>
+                             <li class="date-day">MON</li>
                             <li class="date-number">1</li>
                             <li class="date-month">JAN</li>
                         </div>
                         <div class="date">
-                            <li class="date-day">MON</li>
+                             <li class="date-day">MON</li>
                             <li class="date-number">1</li>
                             <li class="date-month">JAN</li>
                         </div>
                         <div class="date">
-                            <li class="date-day">MON</li>
+                             <li class="date-day">MON</li>
                             <li class="date-number">1</li>
                             <li class="date-month">JAN</li>
                         </div>
                         <div class="date">
-                            <li class="date-day">MON</li>
+                             <li class="date-day">MON</li>
                             <li class="date-number">1</li>
+                            <li class="date-month">JAN</li>
+                        </div>
+                    
+
+                        <div class="date">
+                            <li class="date-day">MON</li>
+                            <li class="date-number">01</li>
+                            <li class="date-month">JAN</li>
+                        </div>
+                        <div class="date">
+                             <li class="date-day">MON</li>
+                            <li class="date-number">2</li>
+                            <li class="date-month">JAN</li>
+                        </div>
+                        <div class="date">
+                             <li class="date-day">MON</li>
+                            <li class="date-number">3</li>
+                            <li class="date-month">JAN</li>
+                        </div>
+                        <div class="date">
+                             <li class="date-day">MON</li>
+                            <li class="date-number">4</li>
+                            <li class="date-month">JAN</li>
+                        </div>
+                        <div class="date">
+                             <li class="date-day">MON</li>
+                            <li class="date-number">5</li>
+                            <li class="date-month">JAN</li>
+                        </div>
+                        <div class="date">
+                             <li class="date-day">MON</li>
+                            <li class="date-number">6</li>
+                            <li class="date-month">JAN</li>
+                        </div>
+                        <div class="date">
+                             <li class="date-day">MON</li>
+                            <li class="date-number">7</li>
                             <li class="date-month">JAN</li>
                         </div>
                     </div>
+
                     <button class="btn btn-primary">&gt;</button>
                 </div>
 
                 <div class="dropdown-filter">
                     <div class="lang-movie filter-sCard">HINID- 2D</div>
-                    <div class="filter-sCard ">FILTER- Sub Region</div>
-                    <div class="filter-sCard ">FILTER- Price Range</div>
-                    <div class="filter-sCard ">FILTER- Show Timing</div>
-
-
+                    <div class="filter-sCard " >FILTER- Sub Region</div>
+                    <div class="filter-sCard " >FILTER- Price Range</div>
+                    <div class="filter-sCard " >FILTER- Show Timing</div>
+                
+                      
                 </div>
 
 
@@ -95,13 +164,14 @@
         </section>
         <!-- Movie Details Ends here -->
         <section class="theater-container">
-
+             
         </section>
 
+        
 
+       
 
     </div>
-
+    
 </body>
-
 </html>
