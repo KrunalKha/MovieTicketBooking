@@ -1,6 +1,8 @@
 import MovieService from "../services/movieService.js";
 import WebSeriesService from "../services/webSeriesService.js";
 import SportService from "../services/sportsService.js";
+import UserService from "../services/userService.js";
+import User from "../model/Users.js";
 
 $(document).ready(function () {
     let card_count = 1;
@@ -102,10 +104,10 @@ $(document).ready(function () {
                 window.location.href = 'booking_show.html?category=' + categoryId + '&id=' + Id;
 
             });
-            $('#webSeriesSeemore-btn').click(function() {
-            
+            $('#webSeriesSeemore-btn').click(function () {
+
                 window.location.href = 'webSeries.html';
-                
+
             });
 
         }).catch((error) => {
@@ -155,19 +157,63 @@ $(document).ready(function () {
                 window.location.href = 'booking_show.html?category=' + categoryId + '&id=' + Id;
 
             });
-            $('#sportsSeemore-btn').click(function() {
-        
+            $('#sportsSeemore-btn').click(function () {
+
                 window.location.href = 'sports.html';
-                
+
             });
 
-            
+
 
         }).catch((error) => {
             console.log(error);
         })
 
-        //add events here
+    //add events here
+
+
+    //making banner clickable
+    $('.carousel-item').on('click', function () {
+
+        var categoryId = 'Sport';
+        var Id = $(this).attr('id');
+        alert(Id);
+        var link = 'booking_show.html?category=' + categoryId + '&id=' + Id
+        if (link) {
+            window.location.href = link;
+        }
+    });
+
+    // city popup
+    $('#city').on('click', function () {
+        $('#popupContainer').fadeIn();
+
+        $('.city-button').on('click', function () {
+            var selectedCity = $(this).data('city');
+            //post the city to user database and display
+            alert('You selected: ' + selectedCity);
+            let userId = 1;
+            
+            let updatedData = {
+                _city: selectedCity
+            }
+
+            UserService.editUsersDetails(userId, updatedData);
+            //changing temperory needs to debug
+            $("#city").text(selectedCity);
+           
+            $('#popupContainer').fadeOut();
+        });
+    });
+
+
+    $('#closeButton').on('click', function () {
+        $('#popupContainer').fadeOut();
+    });
+
+
+
+
 
 })
 

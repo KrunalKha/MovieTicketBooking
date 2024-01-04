@@ -1,7 +1,7 @@
 import MovieService from "../services/movieService.js";
 
-function showCards(movies){
-    
+function showCards(movies) {
+
     $(".content").html("<div class='popular-movies movies-container'></div>");
     $(".movies-container").append("<div class = 'card-container'></div>");
     let card_count = 1;
@@ -55,10 +55,10 @@ $(document).ready(function () {
                 filterMoviesByYear(year_inp);
             } else if (year_inp != 'all' && year_inp != "" && year_inp != undefined) {
                 filterMoviesonYear(year_inp);
-            }else if(year_inp == undefined || year_inp == ""){
+            } else if (year_inp == undefined || year_inp == "") {
                 //let it go
-            
-            } 
+
+            }
             else {
                 console.log("error because of invalid value");
             }
@@ -71,7 +71,7 @@ $(document).ready(function () {
             }
 
             showCards(movies);
-            
+
 
         }).catch((error) => {
             console.log(error);
@@ -81,8 +81,8 @@ $(document).ready(function () {
 
     $(document).on('click', '#search-btn', function () {
         let value = $('#search_bar').val();
-        
-      
+
+
         //common from this
         MovieService.getMovieDetailsbyFilter(params).then((response) => {
 

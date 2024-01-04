@@ -1,22 +1,22 @@
 import SportService from "../services/sportsService.js";
 
-$(document).ready(function(){
+$(document).ready(function () {
 
     SportService.getSportDetails()
-    .then((response)=>{
-       
-        
-        let sports = response.data;
+        .then((response) => {
 
-        $(".content").append("<div class='sports-container'></div>");
-        $(".sports-container").append("<div class = 'card-container'></div>");
-        let card_count=1;
-         for(let sport of sports){
-           
-            let card = `<div class = 'card card_${card_count}'></div>`;
-            let row = `
+
+            let sports = response.data;
+
+            $(".content").append("<div class='sports-container'></div>");
+            $(".sports-container").append("<div class = 'card-container'></div>");
+            let card_count = 1;
+            for (let sport of sports) {
+
+                let card = `<div class = 'card card_${card_count}'></div>`;
+                let row = `
                 <div class ="card-image">
-                <img src="${sport.image.replace('C:\\fakepath\\','../images/sportsPosters/')}" alt="sport poster" >
+                <img src="${sport.image.replace('C:\\fakepath\\', '../images/sportsPosters/')}" alt="sport poster" >
 
                 </div>
                 <div class="overlay">
@@ -27,24 +27,24 @@ $(document).ready(function(){
 					</div>
 				</div>
 
-            `  
-            $(".card-container").append(card);
-          
-            $(".card_"+card_count).append(row);
-            card_count=card_count+1;
-         }
+            `
+                $(".card-container").append(card);
 
-         $('.book-now-btn').click(function() {
-            
-            var categoryId = 'Sport';
-            var Id = $(this).attr('sportId'); 
-            window.location.href = 'booking_show.html?category=' + categoryId + '&id=' + Id;
-            
-          });
-        
-    }).catch((error)=>{
-        console.log(error);
-    })
+                $(".card_" + card_count).append(row);
+                card_count = card_count + 1;
+            }
+
+            $('.book-now-btn').click(function () {
+
+                var categoryId = 'Sport';
+                var Id = $(this).attr('sportId');
+                window.location.href = 'booking_show.html?category=' + categoryId + '&id=' + Id;
+
+            });
+
+        }).catch((error) => {
+            console.log(error);
+        })
 
 })
 

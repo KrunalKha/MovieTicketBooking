@@ -1,5 +1,14 @@
 {
-  "Users": [],
+  "Users": [
+    {
+      "_name": "krunal",
+      "_emailId": "krunalkha@cbage.com",
+      "_pass": "admin",
+      "_favourites": [],
+      "_city": "kolkata",
+      "id": 1
+    }
+  ],
   "Theater": [],
   "Registration": [],
   "Films": [
