@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BookMe</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>BookMe</title>
 	<script src="../JavaScript/plugins/all_cdn.js"></script>
-	<script src="../JavaScript/controller/movie_details_controller.js" type="module"></script>
+	<script src="../JavaScript/controller/all_details_controller.js" type="module"></script>
 	<link rel="stylesheet" href="../CSS/index.css">
-	
+
 </head>
+
 <body>
 	<!-- header Start here -->
-    <div class="header">
-        <div class="headertop_desc">
+	<div class="header">
+		<div class="headertop_desc">
 			<div class="wrap">
 				<div class="nav_list">
 					<div class="prime-nav">
@@ -22,71 +24,118 @@
 							<li><a href="webSeries.html">Web Series</a></li>
 							<li><a href="sports.html">Sports</a></li>
 							<li><a href="events.html">Events</a></li>
-							
-							
+
+
 						</ul>
 					</div>
-					
+
 
 					<div class="account_desc">
 						<ul>
-							<li id="login"><a href="../login/login.html">Login</a></li>
-							<li id="loggedIn" style="display: none;"><a href="">My Account</a></li>
+							<li id="login" style="display: none;"><a href="../login/login.html">Login</a></li>
+							<button id="city">City</button>
+							<li id="loggedIn"><a href="">My Account</a></li>
 						</ul>
-				</div> 
+					</div>
 				</div>
-				
-				
+
+
 				<form class="d-flex">
-					<input class="form-control me-2" id="search_bar" type="search" placeholder="Search" aria-label="Search" required>
+					<input class="form-control me-2" id="search_bar" type="search" placeholder="Search"
+						aria-label="Search" required>
 					<button class="btn btn-outline-success" type="submit">Search</button>
 				</form>
 			</div>
 
-					<!-- slider -->
-				<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-					<div class="carousel-inner">
-						<div class="carousel-item active slider" data-bs-interval="10000">
-							<img src="../images/banners/1.jpg" class="d-block w-100  ban_img" alt="...">
-						</div>
-						<div class="carousel-item slider" data-bs-interval="2000">
-							<img src="../images/banners/2.jpg" class="d-block w-100  ban_img" alt="...">
-							
-						</div>
-						<div class="carousel-item slider">
-							<img src="../images/banners/3.jpg" class="d-block w-100 ban_img" alt="...">
-							
-						</div>
+			<!-- slider -->
+			<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+				<div class="carousel-inner">
+					<div class="carousel-item active slider" data-bs-interval="10000" id="1">
+						<img src="../images/banners/1.jpg" class="d-block w-100  ban_img" alt="poster">
 					</div>
-					<div class="carousel-indicators">
-						<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
-							aria-current="true" aria-label="Slide 1"></button>
-						<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
-							aria-label="Slide 2"></button>
-						<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
-							aria-label="Slide 3"></button>
+					<div class="carousel-item slider" data-bs-interval="2000" id="2">
+						<img src="../images/banners/2.jpg" class="d-block w-100  ban_img" alt="poster">
+
+					</div>
+					<div class="carousel-item slider" id="3">
+						<img src="../images/banners/3.jpg" class="d-block w-100 ban_img" alt="poster">
+
 					</div>
 				</div>
-			   <!------End Slider ------------>
-				<div class="clear"></div>
+				<div class="carousel-indicators">
+					<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+						aria-current="true" aria-label="Slide 1"></button>
+					<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+						aria-label="Slide 2"></button>
+					<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+						aria-label="Slide 3"></button>
+				</div>
 			</div>
+			<!------End Slider ------------>
+			<div class="clear"></div>
+		</div>
 
 		<div class="hbar"></div>
-		
+
+		<!-- City code -->
+		<div id="popupContainer" class="popup">
+			<span class="close" id="closeButton">&times;</span>
+			<p>Choose Your City:</p>
+			<div class="city-container">
+				<button class="city-button" data-city="mumbai">Mumbai</button>
+				<button class="city-button" data-city="delhi">Delhi</button>
+				<button class="city-button" data-city="pune">Pune</button>
+				<button class="city-button" data-city="kolkata">Kolkata</button>
+			</div>
 
 
-			
-	<section class="content">
-		
 
-	</section>
-																		
-			
-			  
-	</body>		
+		</div>
+
+
+
+		<section class="content">
+
+
+		</section>
+
+		<!-- HTML for Footer -->
+		<footer>
+			<div class="footer">
+				<div class="footer-content">
+					<div class="footer-section about">
+						<h3>About Us</h3>
+						<p>Welcome to BookMe.com, your go-to destination for an unparalleled cinematic experience.
+							Explore the latest movies, book tickets effortlessly, and enjoy a seamless movie-going
+							adventure.</p>
+					</div>
+					<div class="footer-section links">
+						<h3>Quick Links</h3>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="movies.html">Movies</a></li>
+							<li><a href="sports.html">Sports</a></li>
+							<li><a href="events.html">Events</a></li>
+							<li><a href="#">FAQ</a></li>
+						</ul>
+					</div>
+					<div class="footer-section contact">
+						<h3>Contact Us</h3>
+						<p>Have questions or feedback? Reach out to our customer support team.<br>
+							Email: support@bookme.com<br>
+							Phone: +1 (555) 123-4567
+						</p>
+					</div>
+
+				</div>
+				<div class="footer-bottom">
+					<p>&copy; 2024 bookMe.com | All rights reserved.</p>
+				</div>
+		</footer>
+
+</body>
+
 </html>
 
 <!-- end of file -->
-
-
 
