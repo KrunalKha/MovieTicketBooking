@@ -1,5 +1,10 @@
 {
-  "Users": [],
+  "Users": [
+    {
+      "id": 1,
+      "_city": "pune"
+    }
+  ],
   "Theater": [],
   "Registration": [],
   "Films": [
@@ -8,7 +13,7 @@
       "Year": 2009,
       "Runtime": "162 min",
       "Image": "C:\\fakepath\\avatar.jfif",
-      "Details":"Avatar is an American media franchise created by James Cameron, which consists of a planned series of epic science fiction films produced by Lightstorm Entertainment and distributed by 20th Century Studios, as well as associated merchandise, video games and theme park attractions",
+      "Details": "Avatar is an American media franchise created by James Cameron, which consists of a planned series of epic science fiction films produced by Lightstorm Entertainment and distributed by 20th Century Studios, as well as associated merchandise, video games and theme park attractions",
       "Genre": [
         "animation",
         "action",
@@ -22,7 +27,7 @@
       "Year": 2007,
       "Runtime": "101 min",
       "Image": "C:\\fakepath\\IAmLegend.jfif",
-      "Details":"I Am Legend is a 2007 American post-apocalyptic action thriller film[4][5] directed by Francis Lawrence from a screenplay by Akiva Goldsman and Mark Protosevich and starring Will Smith as US Army virologist Robert Neville. Loosely based on the 1954 novel of the same name by Richard Matheson, the film is set in New York City after a virus",
+      "Details": "I Am Legend is a 2007 American post-apocalyptic action thriller film[4][5] directed by Francis Lawrence from a screenplay by Akiva Goldsman and Mark Protosevich and starring Will Smith as US Army virologist Robert Neville. Loosely based on the 1954 novel of the same name by Richard Matheson, the film is set in New York City after a virus",
       "Genre": [
         "horror",
         "action",
@@ -36,7 +41,7 @@
       "Year": 2006,
       "Runtime": "117 min",
       "Image": "C:\\fakepath\\300.jfif",
-      "Details":"300 is a 2006 American epic historical action film based on the 1998 comic book series of the same name by Frank Miller and Lynn Varley.",
+      "Details": "300 is a 2006 American epic historical action film based on the 1998 comic book series of the same name by Frank Miller and Lynn Varley.",
       "Genre": [
         "war",
         "action",
@@ -50,7 +55,7 @@
       "Year": 2012,
       "Runtime": "143 min",
       "Image": "C:\\fakepath\\TheAvengers.jfif",
-      "Details":"The Avengers are a team of fictional superheroes and the protagonists of the Marvel Cinematic Universe (MCU) media franchise, based on the Marvel Comics team of the same name created by Stan Lee and Jack Kirby in 1963. Founded by S.H.I.E.L.D. Director Nick Fury, the team is a United States-based organization composed primarily of superpowered and gifted individuals, described as ",
+      "Details": "The Avengers are a team of fictional superheroes and the protagonists of the Marvel Cinematic Universe (MCU) media franchise, based on the Marvel Comics team of the same name created by Stan Lee and Jack Kirby in 1963. Founded by S.H.I.E.L.D. Director Nick Fury, the team is a United States-based organization composed primarily of superpowered and gifted individuals, described as ",
       "Genre": [
         "superhero",
         "scienceFiction",
@@ -63,7 +68,7 @@
       "Year": 2019,
       "Runtime": "180 min",
       "Image": "C:\\fakepath\\wolf.jfif",
-      "Details":"Introduced to life in the fast lane through stockbroking, Jordan Belfort takes a hit after a Wall Street crash. He teams up with Donnie Azoff, cheating his way to the top as his relationships slide.",
+      "Details": "Introduced to life in the fast lane through stockbroking, Jordan Belfort takes a hit after a Wall Street crash. He teams up with Donnie Azoff, cheating his way to the top as his relationships slide.",
       "Genre": [
         "comedy",
         "action",
@@ -76,7 +81,7 @@
       "Title": "Interstellar",
       "Year": 2014,
       "Runtime": "169 min",
-      "Details":"When Earth becomes uninhabitable in the future, a farmer and ex-NASA pilot, Joseph Cooper, is tasked to pilot a spacecraft, along with a team of researchers, to find a new planet for humans.",
+      "Details": "When Earth becomes uninhabitable in the future, a farmer and ex-NASA pilot, Joseph Cooper, is tasked to pilot a spacecraft, along with a team of researchers, to find a new planet for humans.",
       "Image": "C:\\fakepath\\interstellar.jfif",
       "Genre": [
         "scienceFiction",
@@ -90,8 +95,8 @@
       "Title": "Animal",
       "Year": 2014,
       "Runtime": "169 min",
-      "Details":"Animal is a 2023 Indian Hindi-language action drama film[5] directed and edited by Sandeep Reddy Vanga, who also co-wrote the screenplay with Pranay Reddy Vanga and Saurabh Gupta. The film is produced by Bhushan Kumar, Pranay Reddy Vanga, Krishan Kumar and Murad Khetani under T-Series Films, Bhadrakali Pictures and Cine1 Studios. ",
-      "Image": "C:\\fakepath\\interstellar.jfif" ,
+      "Details": "Animal is a 2023 Indian Hindi-language action drama film[5] directed and edited by Sandeep Reddy Vanga, who also co-wrote the screenplay with Pranay Reddy Vanga and Saurabh Gupta. The film is produced by Bhushan Kumar, Pranay Reddy Vanga, Krishan Kumar and Murad Khetani under T-Series Films, Bhadrakali Pictures and Cine1 Studios. ",
+      "Image": "C:\\fakepath\\interstellar.jfif",
       "Genre": [
         "scienceFiction",
         "documentary",
@@ -107,7 +112,7 @@
       "Title": "Stranger Things",
       "Year": 2016,
       "Runtime": 50,
-      "Details":"Stranger Things is an American science fiction horror drama television series created by the Duffer Brothers for Netflix. Produced by Monkey Massacre Productions and 21 Laps Entertainment, the first season was released on Netflix on July 15, 2016. The second and third season followed in October 2017 and July 2019 respectively, and the fourth season aired in two parts in May and July 2022. In February 2022, Stranger Things was renewed for a fifth and final season.",
+      "Details": "Stranger Things is an American science fiction horror drama television series created by the Duffer Brothers for Netflix. Produced by Monkey Massacre Productions and 21 Laps Entertainment, the first season was released on Netflix on July 15, 2016. The second and third season followed in October 2017 and July 2019 respectively, and the fourth season aired in two parts in May and July 2022. In February 2022, Stranger Things was renewed for a fifth and final season.",
       "Genre": [
         "mystery",
         "horror",
@@ -120,7 +125,7 @@
       "Title": "The Mandalorian",
       "Year": 2019,
       "Runtime": 40,
-      "Details":"The Mandalorian is an American space Western television series created by Jon Favreau for the streaming service Disney+. It is the first live-action series produced in the Star Wars franchise, beginning five years after the events of Return of the Jedi (1983). The series stars Pedro Pascal as the title character, a lone bounty hunter who goes on the run to protect the Force-sensitive child Grogu from remnant Imperial forces led by Moff Gideon.",
+      "Details": "The Mandalorian is an American space Western television series created by Jon Favreau for the streaming service Disney+. It is the first live-action series produced in the Star Wars franchise, beginning five years after the events of Return of the Jedi (1983). The series stars Pedro Pascal as the title character, a lone bounty hunter who goes on the run to protect the Force-sensitive child Grogu from remnant Imperial forces led by Moff Gideon.",
       "Genre": [
         "adventure",
         "action",
@@ -134,7 +139,7 @@
       "Title": "Breaking Bad",
       "Year": 2008,
       "Runtime": 47,
-      "Details":"Breaking Bad is an American crime drama television series created and produced by Vince Gilligan for AMC. Set and filmed in Albuquerque, New Mexico, the series follows Walter White (Bryan Cranston), an underpaid, overqualified, and dispirited high-school chemistry teacher who is struggling with a recent diagnosis of stage-three lung cancer. White turns to a life of crime and partners with a former student, Jesse Pinkman (Aaron Paul), to produce and distribute methamphetamine to secure his family's financial future before he dies, while navigating the dangers of the criminal underworld.",
+      "Details": "Breaking Bad is an American crime drama television series created and produced by Vince Gilligan for AMC. Set and filmed in Albuquerque, New Mexico, the series follows Walter White (Bryan Cranston), an underpaid, overqualified, and dispirited high-school chemistry teacher who is struggling with a recent diagnosis of stage-three lung cancer. White turns to a life of crime and partners with a former student, Jesse Pinkman (Aaron Paul), to produce and distribute methamphetamine to secure his family's financial future before he dies, while navigating the dangers of the criminal underworld.",
       "Genre": [
         "crime",
         "thriller",
@@ -145,7 +150,7 @@
     {
       "id": 4,
       "Title": "Game of Thrones",
-      "Details":"Game of Thrones attracted a record viewership on HBO and has a broad, active, and international fan base. Critics have praised the series for its acting, complex characters, story, scope, and production values, although its frequent use of nudity and violence (including sexual violence) has been subject to criticism. The final season received significant criticism for its reduced length and creative decisions, with many considering it a disappointing conclusion. The series received 59 Primetime Emmy Awards, the most by a drama series, including Outstanding Drama Series in 2015, 2016, 2018 and 2019. ",
+      "Details": "Game of Thrones attracted a record viewership on HBO and has a broad, active, and international fan base. Critics have praised the series for its acting, complex characters, story, scope, and production values, although its frequent use of nudity and violence (including sexual violence) has been subject to criticism. The final season received significant criticism for its reduced length and creative decisions, with many considering it a disappointing conclusion. The series received 59 Primetime Emmy Awards, the most by a drama series, including Outstanding Drama Series in 2015, 2016, 2018 and 2019. ",
       "Year": 2011,
       "Runtime": 55,
       "Genre": [
@@ -160,7 +165,7 @@
       "id": 5,
       "Title": "Stranger Things",
       "Year": 2016,
-      "Details":"Game of Thrones attracted a record viewership on HBO and has a broad, active, and international fan base. Critics have praised the series for its acting, complex characters, story, scope, and production values, although its frequent use of nudity and violence (including sexual violence) has been subject to criticism. The final season received significant criticism for its reduced length and creative decisions, with many considering it a disappointing conclusion. The series received 59 Primetime Emmy Awards, the most by a drama series, including Outstanding Drama Series in 2015, 2016, 2018 and 2019. ",
+      "Details": "Game of Thrones attracted a record viewership on HBO and has a broad, active, and international fan base. Critics have praised the series for its acting, complex characters, story, scope, and production values, although its frequent use of nudity and violence (including sexual violence) has been subject to criticism. The final season received significant criticism for its reduced length and creative decisions, with many considering it a disappointing conclusion. The series received 59 Primetime Emmy Awards, the most by a drama series, including Outstanding Drama Series in 2015, 2016, 2018 and 2019. ",
       "Runtime": 50,
       "Genre": [
         "mystery",
@@ -174,7 +179,7 @@
       "Title": "The Mandalorian",
       "Year": 2019,
       "Runtime": 40,
-      "Details":"The Mandalorian is an American space Western television series created by Jon Favreau for the streaming service Disney+. It is the first live-action series produced in the Star Wars franchise, beginning five years after the events of Return of the Jedi (1983). The series stars Pedro Pascal as the title character, a lone bounty hunter who goes on the run to protect the Force-sensitive child Grogu from remnant Imperial forces led by Moff Gideon.",
+      "Details": "The Mandalorian is an American space Western television series created by Jon Favreau for the streaming service Disney+. It is the first live-action series produced in the Star Wars franchise, beginning five years after the events of Return of the Jedi (1983). The series stars Pedro Pascal as the title character, a lone bounty hunter who goes on the run to protect the Force-sensitive child Grogu from remnant Imperial forces led by Moff Gideon.",
       "Genre": [
         "adventure",
         "action",
@@ -188,7 +193,7 @@
       "Title": "Breaking Bad",
       "Year": 2008,
       "Runtime": 47,
-      "Details":"I Am Legend is a 2007 American post-apocalyptic action thriller film[4][5] directed by Francis Lawrence from a screenplay by Akiva Goldsman and Mark Protosevich and starring Will Smith as US Army virologist Robert Neville. Loosely based on the 1954 novel of the same name by Richard Matheson, the film is set in New York City after a virus",
+      "Details": "I Am Legend is a 2007 American post-apocalyptic action thriller film[4][5] directed by Francis Lawrence from a screenplay by Akiva Goldsman and Mark Protosevich and starring Will Smith as US Army virologist Robert Neville. Loosely based on the 1954 novel of the same name by Richard Matheson, the film is set in New York City after a virus",
       "Genre": [
         "crime",
         "thriller",
@@ -200,7 +205,7 @@
       "id": 8,
       "Title": "Game of Thrones",
       "Year": 2011,
-      "Details":"The Avengers are a team of fictional superheroes and the protagonists of the Marvel Cinematic Universe (MCU) media franchise, based on the Marvel Comics team of the same name created by Stan Lee and Jack Kirby in 1963. Founded by S.H.I.E.L.D. Director Nick Fury, the team is a United States-based organization composed primarily of superpowered and gifted individuals, described as ",
+      "Details": "The Avengers are a team of fictional superheroes and the protagonists of the Marvel Cinematic Universe (MCU) media franchise, based on the Marvel Comics team of the same name created by Stan Lee and Jack Kirby in 1963. Founded by S.H.I.E.L.D. Director Nick Fury, the team is a United States-based organization composed primarily of superpowered and gifted individuals, described as ",
       "Runtime": 55,
       "Genre": [
         "adventure",
@@ -211,268 +216,298 @@
       "Image": "C:\\fakepath\\got.jfif"
     }
   ],
-
   "Events": [
-    
-        {
-          "id":1,
-          "title": "Legacy Music Concert",
-          "artist": "Arijit Singh",
-          "venue": "The Mills, Pune",
-          "date": "2024-01-05",
-          "duration_minute":"90",
-          "time": "07:00 PM",
-          "genre":"Singing",
-          "rating":"4.5",
-          "ticket_price": "Rs. 3000",
-          "description": "Our favorite melody king is back to charm us with an experience like never before.",
-          "terms_and_conditions": "No outside food and drinks allowed. No video recording allowed.",
-          "Image": "C:\\fakepath\\img1.jpg"
-        },
-        {
-          "id":2,
-          "title": "Soulful Melodies",
-          "artist": "Shreya Ghoshal",
-          "venue": "Mumbai Symphony Hall, Churchgate",
-          "date": "January 5, 2024",
-          "genre":"Emotion",
-          "time": "7:30 PM",
-          "duration_minutes":"190",
-          "rating":"4",
-          "ticket_price": "Rs. 2000",
-          "description": "An enchanting evening of soulful music by the melodious Shreya Ghoshal.",
-          "terms_and_conditions": "Limited parking available. No outside food allowed.",
-          "Image": "C:\\fakepath\\img2.jpg"
-        },
-        {
-          "id":3,
-          "title": "Bollywood Retro Night",
-          "artist": "Sonu Nigam",
-          "venue": "Mumbai Retro Lounge, Juhu",
-          "date": "January 25, 2024",
-          "time": "8:30 PM",
-          "genre":"fashion",
-          "duration_minute":"90",
-          "ticket_price": "Rs. 2000",
-          "description": "An evening of classic Bollywood hits with the legendary Sonu Nigam.",
-          "terms_and_conditions": "No refunds on ticket purchases.",
-          "Image": "C:\\fakepath\\img3.jpg"
-        },
-        {
-          "id":4,
-          "title": "Stand-up Fiesta",
-          "artist": "Zakir Khan",
-          "venue": "Mumbai Comedy Carnival, Lower Parel",
-          "date": "February 15, 2024",
-          "time": "8:45 PM",
-          "duration_minute":"60",
-          "genre":"Comedy",
-          "ticket_price": "Rs. ₹1500",
-          "description": "Get ready for a laughter with talented standup comedian Zakir Khan.",
-          "terms_and_conditions": "No video recording allowed. Venue opens 1 hour before the show.",
-          "Image": "C:\\fakepath\\img4.jpg"
-        },
-        {
-          "id":5,
-          "title": "Stand-up Special",
-          "artist": "Kenny Sebastian",
-          "venue": "Mumbai Comedy Hub, Bandra",
-          "date": "January 15, 2024",
-          "time": "9:00 PM",
-          "duration_minute":"120",
-          "genre":"Comedy",
-          "ticket_price": "Rs. 1000",
-          "description": "Kenny Sebastian presents his hilarious stand-up comedy special.",
-          "terms_and_conditions": "No late entries once the show starts.",
-          "Image": "C:\\fakepath\\img5.jpg"
-        },
-        {
-          "id":6,
-          "title": "Musical Fiesta",
-          "artist": "A.R. Rahman",
-          "venue": "Pune Drome Arena, Koregaon Park",
-          "date": "February 3, 2024",
-          "time": "8:00 PM",
-          "duration_minute":"78",
-          "genre":"Singing",
-          "ticket_price": "Rs. 2500",
-          "description": "Witness the musical genius A.R. Rahman live in concert.",
-          "terms_and_conditions": "No professional videography allowed. Strictly no resale of tickets.",
-          "Image": "C:\\fakepath\\img6.jpg"
-        },
-        {
-          "id":7,
-          "title": "Sunidhi Live in Concert",
-          "artist": "Sunidhi Chauhan",
-          "venue": "Pune Amphitheatre, Deccan",
-          "date": "January 21, 2024",
-          "time": "7:30 PM",
-          "duration_minute":"190",
-          "genre":"Singing",
-          "ticketPriceINR": "Rs. 2000",
-          "description": "An electrifying live performance by Sunidhi Chauhan, showcasing her biggest hits.",
-          "termsAndConditions": "No entry without a printed copy of the ticket.",
-          "Image":"C:\\fakepath\\img7.jpg"
-        },
-        {
-          "id":8,
-          "title": "Comedy Express",
-          "artist": "Anubhav Singh Bassi",
-          "venue": "Royal Opera House, Mumbai",
-          "date": "February 15, 2024",
-          "time": "7:30 PM",
-          "ticket_price": "Rs. 800",
-          "duration_minute":"40",
-          "genre":"Comedy",
-          "description": "A laughter-packed evening featuring Anubhav Singh Bassi.",
-          "terms_and_conditions": "No outside food or beverages allowed.",
-          "Image": "C:\\fakepath\\img8.jpg"
-        },
-        {
-          "id":9,
-          "title": "TEDxMumbai",
-          "artist": "Shah Rukh Khan",
-          "venue": "Mumbai Convention Center, Bandra",
-          "date": "January 15, 2024",
-          "time": "9:00 AM",
-          "duration_minute":"70",
-          "genre":"self-Motivation",
-          "ticket_price": "₹Rs. 5000",
-          "description": "An inspiring TEDx talk by King of Bollywood Shah Rukh Khan sharing insights and experiences.",
-          "terms_and_conditions": "No entry without a valid ticket. No professional videography allowed",
-          "Image": "C:\\fakepath\\img9.jpg"
-        },
-        {
-          "id":10,
-          "title": "Honey Singh Unplugged",
-          "venue": "Pune Music Fest, Koregaon Park",
-          "date": "January 25, 2024",
-          "time": "7:30 PM",
-          "duration_minute":"100",
-          "genre":"Singing",
-          "ticket_price": "Rs. 2000",
-          "description": "An electrifying live performance by Honey Singh with his top hits.",
-          "terms_and_conditions": "Seats allocated on a first-come, first-served basis.",
-          "Image": "C:\\fakepath\\img10.jpg"
-        }
-      
-    
-    
+    {
+      "id": 1,
+      "title": "Legacy Music Concert",
+      "artist": "Arijit Singh",
+      "venue": "The Mills, Pune",
+      "date": "2024-01-05",
+      "duration_minute": "90",
+      "time": "07:00 PM",
+      "genre": "Singing",
+      "rating": "4.5",
+      "ticket_price": "Rs. 3000",
+      "description": "Our favorite melody king is back to charm us with an experience like never before.",
+      "terms_and_conditions": "No outside food and drinks allowed. No video recording allowed.",
+      "Image": "C:\\fakepath\\img1.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Soulful Melodies",
+      "artist": "Shreya Ghoshal",
+      "venue": "Mumbai Symphony Hall, Churchgate",
+      "date": "January 5, 2024",
+      "genre": "Emotion",
+      "time": "7:30 PM",
+      "duration_minutes": "190",
+      "rating": "4",
+      "ticket_price": "Rs. 2000",
+      "description": "An enchanting evening of soulful music by the melodious Shreya Ghoshal.",
+      "terms_and_conditions": "Limited parking available. No outside food allowed.",
+      "Image": "C:\\fakepath\\img2.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Bollywood Retro Night",
+      "artist": "Sonu Nigam",
+      "venue": "Mumbai Retro Lounge, Juhu",
+      "date": "January 25, 2024",
+      "time": "8:30 PM",
+      "genre": "fashion",
+      "duration_minute": "90",
+      "ticket_price": "Rs. 2000",
+      "description": "An evening of classic Bollywood hits with the legendary Sonu Nigam.",
+      "terms_and_conditions": "No refunds on ticket purchases.",
+      "Image": "C:\\fakepath\\img3.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Stand-up Fiesta",
+      "artist": "Zakir Khan",
+      "venue": "Mumbai Comedy Carnival, Lower Parel",
+      "date": "February 15, 2024",
+      "time": "8:45 PM",
+      "duration_minute": "60",
+      "genre": "Comedy",
+      "ticket_price": "Rs. ₹1500",
+      "description": "Get ready for a laughter with talented standup comedian Zakir Khan.",
+      "terms_and_conditions": "No video recording allowed. Venue opens 1 hour before the show.",
+      "Image": "C:\\fakepath\\img4.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Stand-up Special",
+      "artist": "Kenny Sebastian",
+      "venue": "Mumbai Comedy Hub, Bandra",
+      "date": "January 15, 2024",
+      "time": "9:00 PM",
+      "duration_minute": "120",
+      "genre": "Comedy",
+      "ticket_price": "Rs. 1000",
+      "description": "Kenny Sebastian presents his hilarious stand-up comedy special.",
+      "terms_and_conditions": "No late entries once the show starts.",
+      "Image": "C:\\fakepath\\img5.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Musical Fiesta",
+      "artist": "A.R. Rahman",
+      "venue": "Pune Drome Arena, Koregaon Park",
+      "date": "February 3, 2024",
+      "time": "8:00 PM",
+      "duration_minute": "78",
+      "genre": "Singing",
+      "ticket_price": "Rs. 2500",
+      "description": "Witness the musical genius A.R. Rahman live in concert.",
+      "terms_and_conditions": "No professional videography allowed. Strictly no resale of tickets.",
+      "Image": "C:\\fakepath\\img6.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Sunidhi Live in Concert",
+      "artist": "Sunidhi Chauhan",
+      "venue": "Pune Amphitheatre, Deccan",
+      "date": "January 21, 2024",
+      "time": "7:30 PM",
+      "duration_minute": "190",
+      "genre": "Singing",
+      "ticketPriceINR": "Rs. 2000",
+      "description": "An electrifying live performance by Sunidhi Chauhan, showcasing her biggest hits.",
+      "termsAndConditions": "No entry without a printed copy of the ticket.",
+      "Image": "C:\\fakepath\\img7.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Comedy Express",
+      "artist": "Anubhav Singh Bassi",
+      "venue": "Royal Opera House, Mumbai",
+      "date": "February 15, 2024",
+      "time": "7:30 PM",
+      "ticket_price": "Rs. 800",
+      "duration_minute": "40",
+      "genre": "Comedy",
+      "description": "A laughter-packed evening featuring Anubhav Singh Bassi.",
+      "terms_and_conditions": "No outside food or beverages allowed.",
+      "Image": "C:\\fakepath\\img8.jpg"
+    },
+    {
+      "id": 9,
+      "title": "TEDxMumbai",
+      "artist": "Shah Rukh Khan",
+      "venue": "Mumbai Convention Center, Bandra",
+      "date": "January 15, 2024",
+      "time": "9:00 AM",
+      "duration_minute": "70",
+      "genre": "self-Motivation",
+      "ticket_price": "₹Rs. 5000",
+      "description": "An inspiring TEDx talk by King of Bollywood Shah Rukh Khan sharing insights and experiences.",
+      "terms_and_conditions": "No entry without a valid ticket. No professional videography allowed",
+      "Image": "C:\\fakepath\\img9.jpg"
+    },
+    {
+      "id": 10,
+      "title": "Honey Singh Unplugged",
+      "venue": "Pune Music Fest, Koregaon Park",
+      "date": "January 25, 2024",
+      "time": "7:30 PM",
+      "duration_minute": "100",
+      "genre": "Singing",
+      "ticket_price": "Rs. 2000",
+      "description": "An electrifying live performance by Honey Singh with his top hits.",
+      "terms_and_conditions": "Seats allocated on a first-come, first-served basis.",
+      "Image": "C:\\fakepath\\img10.jpg"
+    }
   ],
-
-
   "Sports": [
     {
-      "id":1,
+      "id": 1,
       "match": "Cricket - India vs England Test Series",
       "place": "Wankhede Stadium, Mumbai",
       "date": "2024-01-10",
       "time": "9:30 AM",
       "venue": "D.y patil  Stadium mumbai ",
-      "ticket_price": ["Rs. 1500", "Rs. 2500", "Rs. 3500"],
+      "ticket_price": [
+        "Rs. 1500",
+        "Rs. 2500",
+        "Rs. 3500"
+      ],
       "about": "A thrilling test series between India and England showcasing exceptional cricketing talent.",
       "terms_and_conditions": "1. No outside food or drinks allowed. 2. Gates open 2 hours before the match. 3. Limited parking available.",
       "image": "C:\\fakepath\\img1.jpg"
     },
     {
-      "id":2,
+      "id": 2,
       "match": "Football - Mumbai City FC vs Bengaluru FC",
       "place": "Mumbai Football Arena, Mumbai",
       "date": "2024-01-15",
       "time": "6:00 PM",
-      "venue":"Mumbai football Arena",
-      "ticket_price": ["Rs. 800", "Rs. 1800", "Rs. 3000"],
+      "venue": "Mumbai football Arena",
+      "ticket_price": [
+        "Rs. 800",
+        "Rs. 1800",
+        "Rs. 3000"
+      ],
       "about": "A high-intensity football match in the Indian Super League.",
       "terms_and_conditions": "1. Entry allowed with valid tickets only. 2. No re-entry after exiting the stadium. 3. Alcoholic beverages not permitted.",
       "image": "C:\\fakepath\\img2.jpg"
     },
     {
-      "id":3,
+      "id": 3,
       "match": "Cricket - IPL T20: Mumbai Indians vs Chennai Super Kings",
       "venue": "Wankhede Stadium, Mumbai",
       "date": "2024-02-03",
       "time": "8:00 PM",
-      
-      "ticket_price": ["Rs. 1200", "2500", "Rs. 4000"],
+      "ticket_price": [
+        "Rs. 1200",
+        "2500",
+        "Rs. 4000"
+      ],
       "about": "The biggest rivalry of IPL between Mumbai Indians and Chennai Super Kings.",
       "terms_and_conditions": "1. No resale of tickets allowed. 2. Alcoholic beverages not permitted inside the stadium. 3. Security checks mandatory.",
       "image": "C:\\fakepath\\img3.jpg"
     },
-    
     {
-      "id":4,
+      "id": 4,
       "match": "Commonwealth Games - Athletics",
       "venue": "Shingave fm boyes, Pune",
       "date": "2024-01-20",
       "time": "9:00 AM",
-      
-      "ticket_price": ["Rs. 500", "Rs. 1500", "Rs. 3000"],
+      "ticket_price": [
+        "Rs. 500",
+        "Rs. 1500",
+        "Rs. 3000"
+      ],
       "about": "Athletic events showcasing global talent in the Commonwealth Games.",
       "terms_and_conditions": "1. No entry without a valid ticket. 2. Security checks at the entrance. 3. Prohibited items include weapons and sharp objects.",
       "image": "C:\\fakepath\\img4.jpg"
     },
     {
-      "id":5,
+      "id": 5,
       "match": "Football - Indian Super League Semifinals",
       "venue": "Shree Shiv Chhatrapati Sports Complex, Pune",
       "date": "2024-01-18",
       "time": "7:30 PM",
-      "ticket_price": ["Rs. 3800", "Rs. 1200", "Rs. 2000"],
+      "ticket_price": [
+        "Rs. 3800",
+        "Rs. 1200",
+        "Rs. 2000"
+      ],
       "about": "The semifinal matches of the Indian Super League with top teams battling for a spot in the final.",
       "terms_and_conditions": "1. Entry allowed with valid tickets only. 2. No outside food or beverages allowed. 3. Parking available on a first-come, first-served basis.",
       "image": "C:\\fakepath\\img5.jpg"
     },
     {
-      "id":6,
+      "id": 6,
       "match": "Cricket - IPL T20: Mumbai Indians vs Royal Challengers Banglore",
       "venue": "DY Patil Stadium, Mumbai",
       "date": "2024-01-18",
       "time": "8:00 PM",
-      "ticket_price": ["Rs. 1200", "2500", "Rs. 4000"],
+      "ticket_price": [
+        "Rs. 1200",
+        "2500",
+        "Rs. 4000"
+      ],
       "about": "An intense IPL match between Mumbai Indians and Royal Challengers Banglore promising exciting cricket moments.",
       "terms_and_conditions": "1. No resale of tickets allowed. 2. Alcoholic beverages not permitted inside the stadium. 3. Security checks mandatory.",
       "image": "C:\\fakepath\\img6.jpg"
     },
     {
-      "id":7,
+      "id": 7,
       "match": "Kabaddi - Pro Kabaddi League",
       "venue": "NSCI Dome, Mumbai",
       "date": "2024-02-10",
       "time": "6:30 PM",
-      "ticket_price": ["Rs. 500", "Rs. 1000", "Rs. 1800"],
+      "ticket_price": [
+        "Rs. 500",
+        "Rs. 1000",
+        "Rs. 1800"
+      ],
       "about": "A high-stakes match in the Pro Kabaddi League showcasing exceptional talent.",
       "terms_and_conditions": "1. No entry without a valid ticket. 2. Limited parking available. 3. Spectators to adhere to seating arrangements.",
       "image": "C:\\fakepath\\img7.jpg"
     },
     {
-      "id":8,
+      "id": 8,
       "match": "Cricket - India vs Pakistan T20",
       "venue": "Wankhede Stadium, Mumbai",
       "date": "2024-02-10",
       "time": "7:30 PM",
-      "ticket_price": ["Rs. 2000", "Rs. 4000", "Rs. 6000"],
+      "ticket_price": [
+        "Rs. 2000",
+        "Rs. 4000",
+        "Rs. 6000"
+      ],
       "about": "An intense T20 match between arch-rivals India and Pakistan.",
       "terms_and_conditions": "1. No resale of tickets allowed. 2. Alcoholic beverages not permitted. 3. Security checks at stadium entrances.",
       "image": "C:\\fakepath\\img8.jpg"
     },
     {
-      "id":9,
+      "id": 9,
       "match": "Football - Pune City FC vs FC Goa",
       "venue": "Balewadi Stadium, Pune",
       "date": "2024-02-02",
       "time": "7:30 PM",
-      "ticket_price": ["Rs. 500", "Rs. 1200", "Rs. 2200"],
+      "ticket_price": [
+        "Rs. 500",
+        "Rs. 1200",
+        "Rs. 2200"
+      ],
       "about": "A thrilling match in the Indian Super League between Pune City FC and FC Goa.",
       "terms_and_conditions": "1. Entry allowed with valid tickets only. 2. No outside food or beverages allowed. 3. Bag checks at the entrance.",
       "image": "C:\\fakepath\\img9.jpg"
     },
     {
-      "id":10,
+      "id": 10,
       "match": "Commonwealth Games - Wrestling",
       "venue": "Shree Shiv Chhatrapati Sports Complex, Pune",
       "date": "2024-02-25",
       "time": "11:00 AM",
-      "ticket_price": ["Rs. 500", "Rs. 1500", "Rs. 3000"],
+      "ticket_price": [
+        "Rs. 500",
+        "Rs. 1500",
+        "Rs. 3000"
+      ],
       "about": "Wrestling events featuring global competitors in the Commonwealth Games.",
       "terms_and_conditions": "1. No entry without a valid ticket. 2. Security checks at the entrance. 3. Prohibited items include weapons and sharp objects.",
       "image": "C:\\fakepath\\img10.jpg"
