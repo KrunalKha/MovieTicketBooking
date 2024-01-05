@@ -11,6 +11,7 @@ $(document).ready(function () {
     UserService.getUsersDetailsbyId(userId).then((response) =>{
         let user = response.data;
         let userCity = user._city;
+        
 
         MovieServices.getMovieDetailsbyId(id).then(response => {
             let movie = response.data;
@@ -55,6 +56,7 @@ $(document).ready(function () {
     
     
         }).catch(error => {
+        
             console.log(error);
         })
     

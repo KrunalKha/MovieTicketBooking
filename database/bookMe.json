@@ -13,6 +13,7 @@
   "Registration": [],
   "Films": [
     {
+      
       "id": 1,
       "Title": "Avatar",
       "Year": 2009,
@@ -24,6 +25,16 @@
         "action",
         "horror",
         "scienceFiction"
+      ],
+      "Actress": [
+        "Sam Worthington",
+        "Zoe saldana",
+        "Michelle Rodriguez"
+      ],
+      "Casts": [
+        "../images/moviePosters/mov1.jfif",
+        "../images/moviePosters/mov2.jfif",
+        "../images/moviePosters/mov3.jfif"
       ],
       "theaters": {
         "pune": [
@@ -138,7 +149,6 @@
       }
     },
     {
-      "id": 2,
       "Title": "I Am Legend",
       "Year": 2007,
       "Runtime": "101 min",
@@ -149,6 +159,16 @@
         "action",
         "scienceFiction",
         "thriller"
+      ],
+      "Actress": [
+        "will smith",
+        "Alice Brage",
+        "Charlie Tahan"
+      ],
+      "Casts": [
+        "../images/moviePosters/mov4.jfif",
+        "../images/moviePosters/mov5.jfif",
+        "../images/moviePosters/mov6.jfif"
       ],
       "theaters": {
         "pune": [
@@ -200,7 +220,8 @@
             "id": 41
           }
         ]
-      }
+      },
+      "id": 2
     },
     {
       "Title": "300",
@@ -214,6 +235,16 @@
         "horror",
         "animation"
       ],
+      "Actress": [
+        "Gerard Bulter",
+        "Lena Headey",
+        "daavid Wenham"
+      ],
+      "Casts": [
+        "../images/moviePosters/mov7.jfif",
+        "../images/moviePosters/mov8.jfif",
+        "../images/moviePosters/mov9.jfif"
+      ],
       "id": 3
     },
     {
@@ -226,6 +257,16 @@
         "superhero",
         "scienceFiction",
         "action"
+      ],
+      "Actress": [
+        "Scarlett Johansson",
+        "Natasha",
+        "chris hemsworth"
+      ],
+      "Casts": [
+        "../images/moviePosters/ave1.jfif",
+        "../images/moviePosters/ave2.jfif",
+        "../images/moviePosters/ave3.jfif"
       ],
       "id": 4
     },
@@ -241,6 +282,16 @@
         "horror",
         "documentary"
       ],
+      "Actress": [
+        "Leonardo Dicaprio",
+        "margot robbie",
+        "jonah hill"
+      ],
+      "Casts": [
+        "../images/moviePosters/th1.jfif",
+        "../images/moviePosters/th2.jfif",
+        "../images/moviePosters/th3.jfif"
+      ],
       "id": 5
     },
     {
@@ -255,7 +306,41 @@
         "horror",
         "action"
       ],
+      "Actress": [
+        "Mathhew",
+        "Anne",
+        "jessica"
+      ],
+      "Casts": [
+        "../images/moviePosters/th4.jfif",
+        "../images/moviePosters/th5.jfif",
+        "../images/moviePosters/th6.jfif"
+      ],
       "id": 6
+    },
+    {
+      "Title": "Animal",
+      "Year": 2014,
+      "Runtime": "169 min",
+      "Details": "Animal is a 2023 Indian Hindi-language action drama film[5] directed and edited by Sandeep Reddy Vanga, who also co-wrote the screenplay with Pranay Reddy Vanga and Saurabh Gupta. The film is produced by Bhushan Kumar, Pranay Reddy Vanga, Krishan Kumar and Murad Khetani under T-Series Films, Bhadrakali Pictures and Cine1 Studios. ",
+      "Image": "C:\\fakepath\\interstellar.jfif",
+      "Genre": [
+        "scienceFiction",
+        "documentary",
+        "horror",
+        "action"
+      ],
+      "Actress": [
+        "Mathhew",
+        "Anne",
+        "jessica"
+      ],
+      "Casts": [
+        "../images/moviePosters/th4.jfif",
+        "../images/moviePosters/th5.jfif",
+        "../images/moviePosters/th6.jfif"
+      ],
+      "id": 7
     }
   ],
   "Webseries": [
@@ -270,6 +355,16 @@
         "horror",
         "scienceFiction"
       ],
+      "Actress": [
+        "milklie bobby",
+        "Natalia Dyer",
+        "cara karen"
+      ],
+      "Casts": [
+        "../images/webSeriesPosters/wd2.jfif",
+        "../images/webSeriesPosters/wd2.jfif",
+        "../images/webSeriesPosters/wd3.jfif"
+      ],
       "Image": "C:\\fakepath\\stranger_things.jfif"
     },
     {
@@ -283,6 +378,16 @@
         "action",
         "space",
         "scienceFiction"
+      ],
+      "Actress": [
+        "pedro pascal",
+        "Chris bartlett",
+        "sackhoff"
+      ],
+      "Casts": [
+        "../images/webSeriesPosters/wd4.jfif",
+        "../images/webSeriesPosters/wd5.jfif",
+        "../images/webSeriesPosters/wd6.jfif"
       ],
       "Image": "C:\\fakepath\\mandalorian.jfif"
     },
@@ -297,6 +402,16 @@
         "thriller",
         "tragedy"
       ],
+      "Actress": [
+        "milklie bobby",
+        "Natalia Dyer",
+        "cara karen"
+      ],
+      "Casts": [
+        "../images/webSeriesPosters/kd1.jfif",
+        "../images/webSeriesPosters/kd2.jfif",
+        "../images/webSeriesPosters/kd3.jfif"
+      ],
       "Image": "C:\\fakepath\\breaking_bad.jfif"
     },
     {
@@ -310,6 +425,16 @@
         "action",
         "fantacy",
         "tragedy"
+      ],
+      "Actress": [
+        "milklie bobby",
+        "Natalia Dyer",
+        "cara karen"
+      ],
+      "Casts": [
+        "../images/webSeriesPosters/wd2.jfif",
+        "../images/webSeriesPosters/wd2.jfif",
+        "../images/webSeriesPosters/wd2.jfif"
       ],
       "Image": "C:\\fakepath\\got.jfif"
     },
@@ -324,7 +449,17 @@
         "horror",
         "scienceFiction"
       ],
-      "Image": "C:\\fakepath\\stranger_things.jfif"
+      "Actress": [
+        "milklie bobby",
+        "Natalia Dyer",
+        "cara karen"
+      ],
+      "Casts": [
+        "../images/webSeriesPosters/kd1.jfif",
+        "../images/webSeriesPosters/kd2.jfif",
+        "../images/webSeriesPosters/kd3.jfif"
+      ],
+      "Image": "C:\\fakepath\\Cubicles-Season-3_1703590411.webp"
     },
     {
       "id": 6,
@@ -338,7 +473,17 @@
         "space",
         "scienceFiction"
       ],
-      "Image": "C:\\fakepath\\mandalorian.jfif"
+      "Actress": [
+        "Akshay kumar",
+        "Sunny Deol",
+        "Rashmika Madana"
+      ],
+      "Casts": [
+        "../images/moviePosters/avatar.jfif",
+        "../images/moviePosters/avatar.jfif",
+        "../images/moviePosters/avatar.jfif"
+      ],
+      "Image": "C:\\fakepath\\Money-Heist-Berlin_1676093372.webp"
     },
     {
       "id": 7,
@@ -351,21 +496,17 @@
         "thriller",
         "tragedy"
       ],
-      "Image": "C:\\fakepath\\breaking_bad.jfif"
-    },
-    {
-      "id": 8,
-      "Title": "Game of Thrones",
-      "Year": 2011,
-      "Details": "The Avengers are a team of fictional superheroes and the protagonists of the Marvel Cinematic Universe (MCU) media franchise, based on the Marvel Comics team of the same name created by Stan Lee and Jack Kirby in 1963. Founded by S.H.I.E.L.D. Director Nick Fury, the team is a United States-based organization composed primarily of superpowered and gifted individuals, described as ",
-      "Runtime": 55,
-      "Genre": [
-        "adventure",
-        "action",
-        "fantacy",
-        "tragedy"
+      "Actress": [
+        "Akshay kumar",
+        "Sunny Deol",
+        "Rashmika Madana"
       ],
-      "Image": "C:\\fakepath\\got.jfif"
+      "Casts": [
+        "../images/moviePosters/avatar.jfif",
+        "../images/moviePosters/avatar.jfif",
+        "../images/moviePosters/avatar.jfif"
+      ],
+      "Image": "C:\\fakepath\\dabangii_2_1703065156.webp"
     }
   ],
   "Events": [
@@ -374,7 +515,6 @@
       "title": "Legacy Music Concert",
       "artist": "Arijit Singh",
       "venue": "The Mills, Pune",
-      "city": "pune",
       "date": "2024-01-05",
       "duration_minute": "90",
       "time": "07:00 PM",
@@ -383,6 +523,16 @@
       "ticket_price": "Rs. 3000",
       "description": "Our favorite melody king is back to charm us with an experience like never before.",
       "terms_and_conditions": "No outside food and drinks allowed. No video recording allowed.",
+      "Actress": [
+        "milklie bobby",
+        "Natalia Dyer",
+        "cara karen"
+      ],
+      "Casts": [
+        "../images/webSeriesPosters/wd1.jfif",
+        "../images/webSeriesPosters/wd2.jfif",
+        "../images/webSeriesPosters/wd1.jfif"
+      ],
       "Image": "C:\\fakepath\\img1.jpg"
     },
     {
@@ -390,7 +540,6 @@
       "title": "Soulful Melodies",
       "artist": "Shreya Ghoshal",
       "venue": "Mumbai Symphony Hall, Churchgate",
-      "city": "mumbai",
       "date": "January 5, 2024",
       "genre": "Emotion",
       "time": "7:30 PM",
@@ -399,6 +548,16 @@
       "ticket_price": "Rs. 2000",
       "description": "An enchanting evening of soulful music by the melodious Shreya Ghoshal.",
       "terms_and_conditions": "Limited parking available. No outside food allowed.",
+      "Actress": [
+        "Akshay kumar",
+        "Sunny Deol",
+        "Rashmika Madana"
+      ],
+      "Casts": [
+        "../images/moviePosters/avatar.jfif",
+        "../images/moviePosters/avatar.jfif",
+        "../images/moviePosters/avatar.jfif"
+      ],
       "Image": "C:\\fakepath\\img2.jpg"
     },
     {
@@ -406,7 +565,6 @@
       "title": "Bollywood Retro Night",
       "artist": "Sonu Nigam",
       "venue": "Mumbai Retro Lounge, Juhu",
-      "city": "mumbai",
       "date": "January 25, 2024",
       "time": "8:30 PM",
       "genre": "fashion",
@@ -421,7 +579,6 @@
       "title": "Stand-up Fiesta",
       "artist": "Zakir Khan",
       "venue": "Mumbai Comedy Carnival, Lower Parel",
-      "city": "mumbai",
       "date": "February 15, 2024",
       "time": "8:45 PM",
       "duration_minute": "60",
@@ -436,7 +593,6 @@
       "title": "Stand-up Special",
       "artist": "Kenny Sebastian",
       "venue": "Mumbai Comedy Hub, Bandra",
-      "city": "mumbai",
       "date": "January 15, 2024",
       "time": "9:00 PM",
       "duration_minute": "120",
@@ -451,7 +607,6 @@
       "title": "Musical Fiesta",
       "artist": "A.R. Rahman",
       "venue": "Pune Drome Arena, Koregaon Park",
-      "city": "pune",
       "date": "February 3, 2024",
       "time": "8:00 PM",
       "duration_minute": "78",
@@ -466,7 +621,6 @@
       "title": "Sunidhi Live in Concert",
       "artist": "Sunidhi Chauhan",
       "venue": "Pune Amphitheatre, Deccan",
-      "city": "delhi",
       "date": "January 21, 2024",
       "time": "7:30 PM",
       "duration_minute": "190",
@@ -480,8 +634,7 @@
       "id": 8,
       "title": "Comedy Express",
       "artist": "Anubhav Singh Bassi",
-      "venue": "Royal Opera House, kolkata",
-      "city": "kolkata",
+      "venue": "Royal Opera House, Mumbai",
       "date": "February 15, 2024",
       "time": "7:30 PM",
       "ticket_price": "Rs. 800",
@@ -496,7 +649,6 @@
       "title": "TEDxMumbai",
       "artist": "Shah Rukh Khan",
       "venue": "Mumbai Convention Center, Bandra",
-      "city": "mumbai",
       "date": "January 15, 2024",
       "time": "9:00 AM",
       "duration_minute": "70",
@@ -509,9 +661,7 @@
     {
       "id": 10,
       "title": "Honey Singh Unplugged",
-      "artist": "Honey Singh",
       "venue": "Pune Music Fest, Koregaon Park",
-      "city": "pune",
       "date": "January 25, 2024",
       "time": "7:30 PM",
       "duration_minute": "100",
@@ -537,6 +687,16 @@
       ],
       "about": "A thrilling test series between India and England showcasing exceptional cricketing talent.",
       "terms_and_conditions": "1. No outside food or drinks allowed. 2. Gates open 2 hours before the match. 3. Limited parking available.",
+      "Actress": [
+        "Akshay kumar",
+        "Sunny Deol",
+        "Rashmika Madana"
+      ],
+      "Casts": [
+        "../images/moviePosters/avatar.jfif",
+        "../images/moviePosters/avatar.jfif",
+        "../images/moviePosters/avatar.jfif"
+      ],
       "image": "C:\\fakepath\\img1.jpg"
     },
     {
@@ -553,6 +713,16 @@
       ],
       "about": "A high-intensity football match in the Indian Super League.",
       "terms_and_conditions": "1. Entry allowed with valid tickets only. 2. No re-entry after exiting the stadium. 3. Alcoholic beverages not permitted.",
+      "Actress": [
+        "Akshay kumar",
+        "Sunny Deol",
+        "Rashmika Madana"
+      ],
+      "Casts": [
+        "../images/moviePosters/avatar.jfif",
+        "../images/moviePosters/avatar.jfif",
+        "../images/moviePosters/avatar.jfif"
+      ],
       "image": "C:\\fakepath\\img2.jpg"
     },
     {
@@ -568,6 +738,16 @@
       ],
       "about": "The biggest rivalry of IPL between Mumbai Indians and Chennai Super Kings.",
       "terms_and_conditions": "1. No resale of tickets allowed. 2. Alcoholic beverages not permitted inside the stadium. 3. Security checks mandatory.",
+      "Actress": [
+        "Akshay kumar",
+        "Sunny Deol",
+        "Rashmika Madana"
+      ],
+      "Casts": [
+        "../images/moviePosters/avatar.jfif",
+        "../images/moviePosters/avatar.jfif",
+        "../images/moviePosters/avatar.jfif"
+      ],
       "image": "C:\\fakepath\\img3.jpg"
     },
     {
@@ -583,6 +763,16 @@
       ],
       "about": "Athletic events showcasing global talent in the Commonwealth Games.",
       "terms_and_conditions": "1. No entry without a valid ticket. 2. Security checks at the entrance. 3. Prohibited items include weapons and sharp objects.",
+      "Actress": [
+        "Akshay kumar",
+        "Sunny Deol",
+        "Rashmika Madana"
+      ],
+      "Casts": [
+        "../images/moviePosters/avatar.jfif",
+        "../images/moviePosters/avatar.jfif",
+        "../images/moviePosters/avatar.jfif"
+      ],
       "image": "C:\\fakepath\\img4.jpg"
     },
     {

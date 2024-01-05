@@ -1,9 +1,9 @@
 
+
 import EventService from "../services/eventsService.js";
 import MovieService from "../services/movieService.js";
 import SportService from "../services/sportsService.js";
 import WebSeriesService from "../services/webSeriesService.js";
-
 
 $(document).ready(function () {
     let params = new URLSearchParams(document.location.search);
@@ -14,6 +14,7 @@ $(document).ready(function () {
         MovieService.getMovieDetailsbyId(id)
             .then((response) => {
                 let movie = response.data;
+
                 // Preload image
                 const preloadImage = new Image();
                 preloadImage.src = `${movie.Image.replace('C:\\fakepath\\', '../images/moviePosters/')}`;
@@ -27,8 +28,10 @@ $(document).ready(function () {
                                     <div class="card mb-3" style="width: 1500px; padding: 10px;">
                                         <div class="row g-0">
                                             <div class="col-md-4" id="details-image" id="pop-up">
-                                                <img src="${preloadImage.src}" alt="movie poster" style="margin-top: 30px;">
-                                            </div>
+                                                <img src="${preloadImage.src}" alt="movie poster" style="margin-top: 30px; box-shadow: 7px 7px 7px 3px rgba(156, 190, 56, 0.5);">
+                                                <button class="add-to-favorite-btn">Add to Favorites</button>
+                                                <button class="add-to-favorite-btn2 " style="background:#ff69b4; margin-bottom: 20px; ">Book Now</button></a>
+                                                </div>
                                             <div class="col-md-8">
                                                 <div class="card-body">
                                                     <h5 class="card-title mx-5" id="mov-title"><strong>${movie.Title}</strong></h5>
@@ -39,7 +42,21 @@ $(document).ready(function () {
                                                 <div class="card-body mx-5" id="txt-height">
                                                     <small class="text-muted"><strong>${movie.Details}</strong></small>
                                                 </div>
-                                                <button class="add-to-favorite-btn">Add to Favorites</button>
+                                                <div id="cast">
+                                                <div class="cast-item">
+                                                    <img src="${movie.Casts[0]}" alt="movie poster" class="ca">
+                                                    <h5 class="cname">${movie.Actress[0]}</h5>
+                                                </div>
+                                                <div class="cast-item">
+                                                    <img src="${movie.Casts[1]}" alt="movie poster" class="ca">
+                                                    <h5 class="cname">${movie.Actress[1]}</h5>
+                                                </div>
+                                                <div class="cast-item">
+                                                    <img src="${movie.Casts[2]}" alt="movie poster" class="ca">
+                                                    <h5 class="cname">${movie.Actress[2]}</h5>
+                                                </div>
+                                            </div>          
+                                                
                                             </div>
                                         </div>
                                     </div>
@@ -59,6 +76,17 @@ $(document).ready(function () {
 
                     // Redirect to another page
                     window.location.href = '../HTML/favorite.html';
+                });
+
+                $('.add-to-favorite-btn2').click(function () {
+                    // Store the movie details in favorites (you can use localStorage, a database, etc.)
+                    storeInFavorites(movie);
+
+                    // Show an alert
+                    // alert("Movie added to favorites!");
+
+                    // Redirect to another page
+                    window.location.href = '../HTML/seat.html';
                 });
 
                 // Add a class to the body to show a popup style
@@ -84,10 +112,11 @@ $(document).ready(function () {
                     <div class='popup-container'>
                         <div class='display-container'>
                             <div class='card-container'>
-                                <div class="card mb-3" style="max-width: 1000px; padding: 10px;">
+                                <div class="card mb-3" style="width: 1500px; padding: 10px;height: 550px;">
                                     <div class="row g-0">
                                         <div class="col-md-4" id="details-image" id="pop-up" >
-                                            <img src="${preloadImage.src}"  loading="lazy">
+                                            <img src="${preloadImage.src}"  loading="lazy" style="box-shadow: 7px 7px 7px 3px rgba(156, 190, 56, 0.5);">
+                                            <button class="add-to-favorite-btn">Add to Favorites</button>
                                         </div>
                                         <div class="col-md-8">
                                             <div class="card-body">
@@ -99,7 +128,21 @@ $(document).ready(function () {
                                             <div class="card-body mx-5" id="txt-height">
                                                 <small class="text-muted"><strong>${series.Details}</strong></small>
                                             </div>
-                                            <button class="add-to-favorite-btn">Add to Favorites</button>
+                                            <div id="cast">
+                                                <div class="cast-item">
+                                                    <img src="${series.Casts[0]}" alt="movie poster" class="ca">
+                                                    <h5 class="cname">${series.Actress[0]}</h5>
+                                                </div>
+                                                <div class="cast-item">
+                                                    <img src="${series.Casts[1]}" alt="movie poster" class="ca">
+                                                    <h5 class="cname">${series.Actress[1]}</h5>
+                                                </div>
+                                                <div class="cast-item">
+                                                    <img src="${series.Casts[2]}" alt="movie poster" class="ca">
+                                                    <h5 class="cname">${series.Actress[2]}</h5>
+                                                </div>
+                                            </div>       
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -135,7 +178,7 @@ $(document).ready(function () {
     EventService.getEventDetailsbyId(id)
             .then((response) => {
                 let event = response.data;
-
+                    alert(id);
                 // Preload image
                 const preloadImage = new Image();
                 preloadImage.src = `${event.Image.replace('C:\\fakepath\\', '../images/eventPoster/')}`;
@@ -146,10 +189,11 @@ $(document).ready(function () {
                         <div class='popup-container'>
                             <div class='display-container'>
                                 <div class='card-container'>
-                                    <div class="card mb-3" style="max-width: 1000px; padding: 10px;">
+                                    <div class="card mb-3" style="width: 1500px; padding: 10px;height: 550px;">
                                         <div class="row g-0">
                                             <div class="col-md-4" id="details-image" id="pop-up">
-                                                <img src="${preloadImage.src}" alt="movie poster" loading="lazy">
+                                                <img src="${preloadImage.src}" alt="movie poster" loading="lazy" style="box-shadow: 7px 7px 7px 3px rgba(156, 190, 56, 0.5);">
+                                                <button class="add-to-favorite-btn">Add to Favorites</button>
                                             </div>
                                             <div class="col-md-8">
                                                 <div class="card-body">
@@ -161,7 +205,20 @@ $(document).ready(function () {
                                                 <div class="card-body mx-5" id="txt-height">
                                                     <small class="text-muted"><strong>${event.description}</strong></small>
                                                 </div>
-                                                <button class="add-to-favorite-btn">Add to Favorites</button>
+                                                <div id="cast">
+                                                <div class="cast-item">
+                                                    <img src="${event.Casts[0]}" alt="movie poster" class="ca">
+                                                    <h5 class="cname">${event.Actress[0]}</h5>
+                                                </div>
+                                                <div class="cast-item">
+                                                    <img src="${event.Casts[1]}" alt="movie poster" class="ca">
+                                                    <h5 class="cname">${event.Actress[1]}</h5>
+                                                </div>
+                                                <div class="cast-item">
+                                                    <img src="${event.Casts[2]}" alt="movie poster" class="ca">
+                                                    <h5 class="cname">${event.Actress[2]}</h5>
+                                                </div>
+                                            </div>  
                                             </div>
                                         </div>
                                     </div>
@@ -207,10 +264,11 @@ $(document).ready(function () {
                         <div class='popup-container'>
                             <div class='display-container'>
                                 <div class='card-container'>
-                                    <div class="card mb-3" style="max-width: 1000px; padding: 10px;">
+                                    <div class="card mb-3" style="width: 1500px; padding: 10px;height: 550px;">
                                         <div class="row g-0">
                                             <div class="col-md-4" id="details-image" id="pop-up">
-                                                <img src="${preloadImage.src}" alt="movie poster" loading="lazy">
+                                                <img src="${preloadImage.src}" alt="movie poster" loading="lazy" style="max-width: 100%;height: auto;display: block;margin: 200px 5px 10px 90px;""box-shadow: 7px 7px 7px 3px rgba(156, 190, 56, 0.5);">
+                                                <button class="add-to-favorite-btn">Add to Favorites</button>
                                             </div>
                                             <div class="col-md-8">
                                                 <div class="card-body">
@@ -222,7 +280,21 @@ $(document).ready(function () {
                                                 <div class="card-body mx-5" id="txt-height">
                                                     <small class="text-muted"><strong>${sport.venue}</strong></small>
                                                 </div>
-                                                <button class="add-to-favorite-btn">Add to Favorites</button>
+                                                <div id="cast">
+                                                <div class="cast-item">
+                                                    <img src="${sport.Casts[0]}" alt="movie poster" class="ca">
+                                                    <h5 class="cname">${sport.Actress[0]}</h5>
+                                                </div>
+                                                <div class="cast-item">
+                                                    <img src="${sport.Casts[1]}" alt="movie poster" class="ca">
+                                                    <h5 class="cname">${sport.Actress[1]}</h5>
+                                                </div>
+                                                <div class="cast-item">
+                                                    <img src="${sport.Casts[2]}" alt="movie poster" class="ca">
+                                                    <h5 class="cname">${sport.Actress[2]}</h5>
+                                                </div>
+                                            </div>  
+                                                
                                             </div>
                                         </div>
                                     </div>
@@ -299,6 +371,3 @@ $(document).ready(function () {
         }
     });
 });
-  
-// script.js
-
