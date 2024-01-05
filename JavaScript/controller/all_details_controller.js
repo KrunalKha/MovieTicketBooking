@@ -46,7 +46,6 @@ $(document).ready(function () {
 
                 let categoryId = 'Films';
                 let Id = $(this).attr('movieId');
-                alert(Id);
                 window.location.href = 'booking_show.html?category=' + categoryId + '&id=' + Id;
 
             });
@@ -169,25 +168,25 @@ $(document).ready(function () {
 
     let Id = 1;
     //add events here
-    UserService.getUsersDetailsbyId(Id).then((response) =>{
+    UserService.getUsersDetailsbyId(Id).then((response) => {
         let user = response.data;
         let userCity = user._city;
-       
+
         EventService.getEventDetailsbycity(userCity)
-        .then((response) => {
-            let events = response.data;
-            console.log(events);
-            $(".content").append("<div class='events-container'></div>");
-            $(".events-container").append("<div class = 'content-header3 header_cards'></div>");
-            $(".content-header3").append("<h2 class='content-title'>Events In your City</h2>");
-            $(".content-header3").append("<button class='seeMore' id='eventsSeemore-btn'>see more...</button>");
-            $(".events-container").append("<div class = 'events-card-container card-container'></div>");
+            .then((response) => {
+                let events = response.data;
+                console.log(events);
+                $(".content").append("<div class='events-container'></div>");
+                $(".events-container").append("<div class = 'content-header3 header_cards'></div>");
+                $(".content-header3").append("<h2 class='content-title'>Events In your City</h2>");
+                $(".content-header3").append("<button class='seeMore' id='eventsSeemore-btn'>see more...</button>");
+                $(".events-container").append("<div class = 'events-card-container card-container'></div>");
 
 
-            for (let event of events) {
+                for (let event of events) {
 
-                let card = `<div class = 'card card_${card_count}'></div>`;
-                let row = `
+                    let card = `<div class = 'card card_${card_count}'></div>`;
+                    let row = `
                 <div class ="card-image">
                 <img src="${event.Image.replace('C:\\fakepath\\', '../images/eventPoster/')}" alt="event poster">
                 </div>
@@ -200,32 +199,32 @@ $(document).ready(function () {
 				</div>
 
             `
-                $(".events-card-container").append(card);
+                    $(".events-card-container").append(card);
 
-                $(".card_" + card_count).append(row);
-                card_count = card_count + 1;
-            }
-            $('.book-now-event').click(function () {
+                    $(".card_" + card_count).append(row);
+                    card_count = card_count + 1;
+                }
+                $('.book-now-event').click(function () {
 
-                let EventId = 'Event';
-                let Id = $(this).attr('eventId');
-                window.location.href = 'booking_show.html?category=' + EventId + '&id=' + Id;
+                    let EventId = 'Event';
+                    let Id = $(this).attr('eventId');
+                    window.location.href = 'booking_show.html?category=' + EventId + '&id=' + Id;
 
+                });
+                $('#eventsSeemore-btn').click(function () {
+                    window.location.href = 'events.html';
+
+                });
+
+            }).catch((error) => {
+                console.log(error);
             });
-            $('#eventsSeemore-btn').click(function () {
-                window.location.href = 'events.html';
-
-            });
-
-        }).catch((error) => {
-            console.log(error);
-        });
 
 
     })
 
-    
-   
+
+
 
     //making banner clickable
     $('.carousel-item').on('click', function () {
@@ -244,7 +243,7 @@ $(document).ready(function () {
         $('#popupContainer').fadeIn();
 
         $('.city-button').on('click', function (event) {
-             event.preventDefault();
+            event.preventDefault();
             var selectedCity = $(this).data('city');
             //post the city to user database and display
             // alert('You selected: ' + selectedCity);
@@ -257,9 +256,9 @@ $(document).ready(function () {
             UserService.editUsersDetails(userId, updatedData);
             //changing temperory needs to debug
             $("#city-label").html(selectedCity);
-           
+
             $('#popupContainer').fadeOut();
-           
+
         });
     });
 

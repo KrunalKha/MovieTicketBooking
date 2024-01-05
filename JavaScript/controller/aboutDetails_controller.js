@@ -14,7 +14,6 @@ $(document).ready(function () {
         MovieService.getMovieDetailsbyId(id)
             .then((response) => {
                 let movie = response.data;
-
                 // Preload image
                 const preloadImage = new Image();
                 preloadImage.src = `${movie.Image.replace('C:\\fakepath\\', '../images/moviePosters/')}`;
@@ -136,6 +135,7 @@ $(document).ready(function () {
     EventService.getEventDetailsbyId(id)
             .then((response) => {
                 let event = response.data;
+
                 // Preload image
                 const preloadImage = new Image();
                 preloadImage.src = `${event.Image.replace('C:\\fakepath\\', '../images/eventPoster/')}`;

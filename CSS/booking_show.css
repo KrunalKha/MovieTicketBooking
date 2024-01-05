@@ -1,176 +1,181 @@
-/* Code by Krunal Kharat */
+
 
 body,
 *::after,
-*::before{
+*::before {
     box-sizing: border-box;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 18px;
     margin: 0px;
-    color:white;
+    color: white;
 }
 
-body{
+body {
     background-color: rgb(60, 56, 56);
 }
+
 /* HEADER */
 
-.navigation{
-    height:105px;
-    border:2px solid white;
+.navigation {
+    height: 105px;
+    border: 2px solid white;
 }
 
 /* MOVIE DETAILS */
 
-.movie-details{
+.movie-details {
     overflow: hidden;
-   
+
 }
 
-.movie-details .movie-details-contianer{
+.movie-details .movie-details-contianer {
     height: 130px;
     padding: 10px 15px;
 }
 
-#movie-name{
+#movie-name {
     font-size: 2.5rem;
 }
 
-.more-details-movie{
+.more-details-movie {
     position: relative;
-    left:-15px;
-    margin:0px;
+    left: -15px;
+    margin: 0px;
     height: 25px;
-    color:rgba(255, 255, 255, 0.516);
+    color: rgba(255, 255, 255, 0.516);
 }
 
 
-._censor , .tags-movie{
+._censor,
+.tags-movie {
     border: 2px solid white;
-    padding:3px 8px;
-    font-size:medium;
+    padding: 3px 8px;
+    font-size: medium;
     border-radius: 10%;
     font-family: sans-serif;
     margin-right: 10px;
 }
 
-._censor{
-    padding:5px;
+._censor {
+    padding: 5px;
     border-radius: 50%;
     margin-left: 20px;
-    
+
 }
 
 /* Filter */
 
-.filter-wrapper{
+.filter-wrapper {
     position: relative;
-    
-    border:2px solid white;
+
+    border: 2px solid white;
     height: 64px;
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     justify-content: space-between;
 }
 
-.filter-container{
+.filter-container {
     display: flex;
     flex-direction: row;
-    max-width:250px;
+    max-width: 250px;
     justify-content: space-between;
     align-items: center;
-   
+
 }
 
-.date-container{
+.date-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-   
-    
+
+
     overflow: hidden;
-    
-}
-.date{
-  
-   padding: 5px;
-   border:1px solid white;
-   height: 52px;
-   line-height: 1;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
 
 }
 
-.date:hover{
+.date {
+
+    padding: 5px;
+    border: 1px solid white;
+    height: 52px;
+    line-height: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.date:hover {
     color: rgb(203, 95, 113);
     background-color: white;
 }
 
-.date .date-day,.date-month{
+.date .date-day,
+.date-month {
     font-size: 12px;
 }
 
-.date .date-number{
+.date .date-number {
     font-size: 18px;
-  
+
 }
 
-.date li{
+.date li {
     list-style: none;
 }
 
-.filter-container .btn{
-    margin:0px 5px;
+.filter-container .btn {
+    margin: 0px 5px;
 }
 
-.dropdown-filter{
-   
-    width:50%;
+.dropdown-filter {
+
+    width: 50%;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
 }
 
-.filter-sCard{
+.filter-sCard {
     height: 100%;
-    width:auto;
+    width: auto;
     font-size: large;
     text-align: center;
-    padding:15px 10px 10px 15px;
+    padding: 15px 10px 10px 15px;
     border-left: 2px solid white;
     border-right: 2px solid white;
 
 }
 
-.card-container{
+.card-container {
     width: 100%;
     height: auto;
 }
+
 .card {
     margin-top: 10px;
-  flex: 0 0 auto;
-  width: 700px;
-  height: 500px;
-  margin-right: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  overflow: hidden;
-  color:black;
-  }
+    flex: 0 0 auto;
+    width: 700px;
+    height: 500px;
+    margin-right: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    color: black;
+}
 
 
-  .card-image {
+.card-image {
     position: relative;
     display: flex;
     justify-content: space-between;
     overflow: hidden;
     border: 2px solid lightblue;
-    }
-    
-    .card img {
+}
+
+.card img {
     width: 100%;
     height: 100%;
     /* -o-object-fit: cover; */
@@ -178,60 +183,63 @@ body{
     width: 300px;
     height: 380px;
     transition: transform 0.3s ease;
-    }
-    
-    /* s */
-    .card-info {
-        color:black;
-        text-align: center;
-        }
-        
-        .card-info h5 {
-           justify-content: center;
-        margin-bottom: 80px;
-        text-align: right;
-        }
-        
-        .card-info p {
-        margin-bottom: 30px;
-        margin-left: 80px;
-        }
+}
 
-        .card-text  .text-muted{
-            margin-right: 20px;
-            justify-content: space-between;
-            
-        }
-        #txt-height{
-            padding: 28px;
+/* s */
+.card-info {
+    color: black;
+    text-align: center;
+}
 
-            
-        }
-        #mov-title{
-            text-align: center;
-            text-decoration: dashed;
-        }
-        #mov-year{
-           text-shadow: 10px;
-        }
-        #details-image{
-          
-           
-            height: auto;
-        }
-       #pop-up{
-        display: none;
-        position: fixed;
-        z-index: 1;
-        padding-top: 50px;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        overflow: auto;
-        background-color: rgba(0, 0, 0, 0.9);
-    }
-    .display-container{
-        width: 100%;
-    }
+.card-info h5 {
+    justify-content: center;
+    margin-bottom: 80px;
+    text-align: right;
+}
 
+.card-info p {
+    margin-bottom: 30px;
+    margin-left: 80px;
+}
+
+.card-text .text-muted {
+    margin-right: 20px;
+    justify-content: space-between;
+
+}
+
+#txt-height {
+    padding: 28px;
+
+
+}
+
+#mov-title {
+    text-align: center;
+    text-decoration: dashed;
+}
+
+#mov-year {
+    text-shadow: 10px;
+}
+
+#details-image {
+    height: auto;
+}
+
+#pop-up {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.display-container {
+    width: 100%;
+}

@@ -17,7 +17,10 @@ class MovieService{
 
     static async getMovieDetailsbyFilter(params){
         // to fetch data from URL --get API
-        return await axios.get(`${this.url}`,{params});
+        return await axios.get(`${this.url}`, {
+            params
+        }
+        );
     }
     // static async deleteProductDetails(id){
     //     return await axios.delete(`${this.url}/${id}`)

@@ -7,10 +7,12 @@
     <title>BookMe</title>
   
     
-	 <script src="../JavaScript/controller/aboutDetails_controller.js" type="module"></script>  
+	 <script src="../JavaScript/controller/aboutDetails_controller.js" type="module"></script> 
+     <script src="../JavaScript/controller/theatre_controller.js" type="module"></script>   
      <link rel="stylesheet" href="../CSS/index.css">
      <script src="../JavaScript/plugins/all_cdn.js"></script>
     <link rel="stylesheet" href="../CSS/booking_show.css">
+    <link rel="stylesheet" href="../CSS/theaters.css">
     
 </head>
 <body>
@@ -41,13 +43,6 @@
                     </div>
                     </div>
     
-                    
-                    
-                        <form class="d-flex">
-                            <input class="form-control me-2" id="search_bar" type="search" placeholder="Search"
-                                aria-label="Search" required>
-                            <button class="btn btn-outline-success" type="submit" id="search-btn">Search</button>
-                        </form>
                     </div>
     
     
@@ -58,6 +53,18 @@
         <section class="content">
 
         </section>
+
+        <!-- City code -->
+			<div id="popupContainer" class="popup">
+				<span class="close" id="closeButton">&times;</span>
+				<p>Choose Your City:</p>
+				<div class="city-container">
+					<button class="city-button" data-city="mumbai">Mumbai</button>
+					<button class="city-button" data-city="delhi">Delhi</button>
+					<button class="city-button" data-city="pune">Pune</button>
+					<button class="city-button" data-city="kolkata">Kolkata</button>
+				</div>
+            </div>
 
         <!-- Movie Details starts here -->
         <section class="movie-details">
@@ -165,6 +172,40 @@
         <section class="theater-container">
              
         </section>
+
+        			<!-- HTML for Footer -->
+			<footer>
+				<div class="footer">
+					<div class="footer-content">
+						<div class="footer-section about">
+							<h3>About Us</h3>
+							<p>Welcome to BookMe.com, your go-to destination for an unparalleled cinematic experience.
+								Explore the latest movies, book tickets effortlessly, and enjoy a seamless movie-going
+								adventure.</p>
+						</div>
+						<div class="footer-section links">
+							<h3>Quick Links</h3>
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="movies.html">Movies</a></li>
+								<li><a href="sports.html">Sports</a></li>
+								<li><a href="events.html">Events</a></li>
+								<li><a href="#">FAQ</a></li>
+							</ul>
+						</div>
+						<div class="footer-section contact">
+							<h3>Contact Us</h3>
+							<p>Have questions or feedback? Reach out to our customer support team.<br>
+								Email: support@bookme.com<br>
+								Phone: +1 (555) 123-4567
+							</p>
+						</div>
+	
+					</div>
+					<div class="footer-bottom">
+						<p>&copy; 2024 bookMe.com | All rights reserved.</p>
+					</div>
+			</footer>		
 
         
 

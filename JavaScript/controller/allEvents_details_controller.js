@@ -43,4 +43,29 @@ $(document).ready(function(){
     }).catch((error)=>{
         console.log(error);
     });
+    // city popup
+$('#city').on('click', function (e) {
+    e.preventDefault();
+    $('#popupContainer').fadeIn();
+
+    $('.city-button').on('click', function (event) {
+        event.preventDefault();
+        var selectedCity = $(this).data('city');
+        //post the city to user database and display
+        // alert('You selected: ' + selectedCity);
+        let userId = 1;
+
+        let updatedData = {
+            _city: selectedCity
+        }
+
+        UserService.editUsersDetails(userId, updatedData);
+        //changing temperory needs to debug
+        $("#city-label").html(selectedCity);
+
+        $('#popupContainer').fadeOut();
+
+    });
+});
+    
 })

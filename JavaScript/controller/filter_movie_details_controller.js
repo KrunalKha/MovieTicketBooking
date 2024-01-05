@@ -2,14 +2,11 @@ import MovieService from "../services/movieService.js";
 
 
 $(document).ready(function () {
-    let params;
     $(document).on('click', '#filter-btn', function () {
 
         //storing parameter value
         let year_inp = $('input[name="year"]:checked').val();
         let genre_inp = $('input[name="genre"]:checked').val();
-
-
 
         MovieService.getMovieDetails().then((response) => {
             let movies = response.data;
@@ -73,15 +70,12 @@ $(document).ready(function () {
     })
 
     $(document).on('click', '#search-btn', function () {
-        let value = $('#search_bar').val();
-        //    alert(value);
-        params = new URLSearchParams([['Title', 'Avatar']]);
-
-        //common from this
-        MovieService.getMovieDetailsbyFilter(params).then((response) => {
+        let value = $('#search_bar').val().toLowerCase();
+       
+        MovieService.getMovieDetails().then((response) => {
 
             let movies = response.data;
-            console.log(movies);
+            movies = movies.filter(obj=>obj.Title.toLowerCase().includes(value))
             $(".content").html("<div class='popular-movies movies-container'></div>");
             $(".movies-container").append("<div class = 'card-container'></div>");
             let card_count = 1;
@@ -106,6 +100,7 @@ $(document).ready(function () {
 
                 $(".card_" + card_count).append(row);
                 card_count = card_count + 1;
+        
             }
 
         }).catch((error) => {
@@ -116,15 +111,3 @@ $(document).ready(function () {
     })
 })
 
-
-
-
-
-
-
-
-
-
-
-
-// Code by Krunal Kharat

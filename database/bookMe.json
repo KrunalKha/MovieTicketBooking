@@ -2,7 +2,10 @@
   "Users": [
     {
       "id": 1,
-      "_city": "kolkata",
+      "_name": "kk",
+      "_emailId": "user@gmail.com",
+      "_pass": "123456",
+      "_city": "delhi",
       "_favourite": []
     }
   ],
@@ -10,6 +13,7 @@
   "Registration": [],
   "Films": [
     {
+      "id": 1,
       "Title": "Avatar",
       "Year": 2009,
       "Runtime": "162 min",
@@ -21,9 +25,120 @@
         "horror",
         "scienceFiction"
       ],
-      "id": 1
+      "theaters": {
+        "pune": [
+          {
+            "screenName": "screen1",
+            "Name": "inox-pune",
+            "Time": [
+              "10AM",
+              "12PM",
+              "1PM",
+              "3pm",
+              "4pm"
+            ],
+            "price": 100,
+            "id": 11
+          },
+          {
+            "screenName": "screen2",
+            "Name": "pvr-pune",
+            "Time": [
+              "1.00PM",
+              "3PM"
+            ],
+            "price": 120,
+            "id": 12
+          }
+        ],
+        "mumbai": [
+          {
+            "screenName": "screen1",
+            "Name": "inox-mumbai",
+            "Time": [
+              "10AM",
+              "12PM",
+              "1PM",
+              "3pm",
+              "4pm"
+            ],
+            "price": 110,
+            "id": 31
+          },
+          {
+            "screenName": "screen1",
+            "Name": "inox-mumbai",
+            "Time": [
+              "10AM",
+              "12PM",
+              "1PM",
+              "3pm",
+              "4pm"
+            ],
+            "price": 100,
+            "id": 11
+          }
+        ],
+        "delhi": [
+          {
+            "screenName": "screen1",
+            "Name": "pvr-delhi",
+            "Time": [
+              "10AM",
+              "12PM",
+              "1PM",
+              "3pm",
+              "4pm"
+            ],
+            "price": 90,
+            "id": 41
+          },
+          {
+            "screenName": "screen1",
+            "Name": "inox-delhi",
+            "Time": [
+              "10AM",
+              "12PM",
+              "1PM",
+              "3pm",
+              "4pm"
+            ],
+            "price": 100,
+            "id": 11
+          }
+        ],
+        "kolkata": [
+          {
+            "screenName": "screen1",
+            "Name": "pvr-kolkata",
+            "Time": [
+              "10AM",
+              "12PM",
+              "1PM",
+              "3pm",
+              "4pm"
+            ],
+            "price": 90,
+            "id": 41
+          },
+          {
+            "screenName": "screen1",
+            "Name": "inox-kokata",
+            "Time": [
+              "10AM",
+              "12PM",
+              "1PM",
+              "3pm",
+              "4pm"
+            ],
+            "price": 100,
+            "id": 11
+          }
+        ]
+      }
     },
     {
+      "id": 2,
       "Title": "I Am Legend",
       "Year": 2007,
       "Runtime": "101 min",
@@ -35,7 +150,57 @@
         "scienceFiction",
         "thriller"
       ],
-      "id": 2
+      "theaters": {
+        "pune": [
+          {
+            "screenName": "screen1",
+            "Name": "inox-pune",
+            "Time": [
+              "10AM",
+              "12PM",
+              "1PM",
+              "3pm",
+              "4pm"
+            ],
+            "price": 100,
+            "id": 11
+          },
+          {
+            "screenName": "screen2",
+            "Name": "pvr-pune",
+            "Time": [
+              "1.00PM",
+              "3PM"
+            ],
+            "price": 120,
+            "id": 12
+          }
+        ],
+        "mumbai": [
+          {
+            "screenName": "screen1",
+            "Name": "inox-mumbai",
+            "Time": [
+              "1.00PM",
+              "3PM"
+            ],
+            "price": 110,
+            "id": 31
+          }
+        ],
+        "delhi": [
+          {
+            "screenName": "screen1",
+            "Name": "pvr-delhi",
+            "Time": [
+              "1.00PM",
+              "3PM"
+            ],
+            "price": 90,
+            "id": 41
+          }
+        ]
+      }
     },
     {
       "Title": "300",
@@ -91,20 +256,6 @@
         "action"
       ],
       "id": 6
-    },
-    {
-      "Title": "Animal",
-      "Year": 2014,
-      "Runtime": "169 min",
-      "Details": "Animal is a 2023 Indian Hindi-language action drama film[5] directed and edited by Sandeep Reddy Vanga, who also co-wrote the screenplay with Pranay Reddy Vanga and Saurabh Gupta. The film is produced by Bhushan Kumar, Pranay Reddy Vanga, Krishan Kumar and Murad Khetani under T-Series Films, Bhadrakali Pictures and Cine1 Studios. ",
-      "Image": "C:\\fakepath\\interstellar.jfif",
-      "Genre": [
-        "scienceFiction",
-        "documentary",
-        "horror",
-        "action"
-      ],
-      "id": 7
     }
   ],
   "Webseries": [

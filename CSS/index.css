@@ -1,12 +1,4 @@
 
-/* Colors */
-/* 
-black
-#14213d 
-#fca311
-#e5e5e5
-white
- */
 :root {
   --darkblue: #14213d;
   --orange: #fca311;
@@ -104,6 +96,8 @@ margin-right:100px;
   width:400px;
  
 }
+
+
 
 /* slider */
 .ban_img{
@@ -379,4 +373,93 @@ background-color: var(--orange);
 .footer-bottom p {
   margin: 0;
   font-size: 14px;
+}
+
+
+/* Default styles for larger screens */
+
+/* ... (your existing code) ... */
+
+/* Responsive styles for tablet screens */
+@media screen and (max-width: 1024px) {
+  .wrap {
+    height: auto;
+  }
+
+  .nav_list {
+    flex-direction: column;
+  }
+
+  .nav_list li {
+    border-left: none;
+    border-bottom: 2px ridge #3D3B3B;
+    width: 100%;
+    text-align: center;
+  }
+
+  .d-flex {
+    justify-content: center;
+    margin-right: 0;
+  }
+
+  #search_bar {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .header_cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .footer-content {
+    flex-direction: column;
+  }
+}
+
+/* Responsive styles for mobile screens */
+@media screen and (max-width: 768px) {
+  .wrap {
+    height: auto;
+  }
+
+  .nav_list {
+    flex-direction: column;
+  }
+
+  .nav_list li {
+    border-left: none;
+    border-bottom: 2px ridge #3D3B3B;
+    width: 100%;
+    text-align: center;
+  }
+
+  .d-flex {
+    justify-content: center;
+    margin-right: 0;
+  }
+
+  #search_bar {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .header_cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .footer-content {
+    flex-direction: column;
+  }
 }
