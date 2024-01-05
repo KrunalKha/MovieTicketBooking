@@ -1,0 +1,81 @@
+/* styles.css */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.seat-container {
+  margin-top: 20px;
+}
+
+.seat-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.seat {
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.available {
+  background-color: blanchedalmond;
+}
+
+.occupied {
+  background-color: #f28b82;
+}
+
+.selected {
+  background-color: #f7444e;
+  color: #fff;
+}
+
+button {
+  background-color: #f7444e;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 900px;
+  position: absolute;
+}
+
+#snacks_a {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  /* Set the background image */
+  background-image: url("../images/bg.jpg");
+  /* Set the background size to cover the entire viewport */
+  background-size: cover;
+  /* Set background to fixed so it doesn't scroll with the content */
+  background-attachment: fixed;
+  /* Decrease opacity to 50% */
+  background-color: rgba(255, 255, 255, 0.5);
+}/*# sourceMappingURL=seats.css.map */
